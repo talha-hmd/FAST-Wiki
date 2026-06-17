@@ -69,7 +69,7 @@ select {
 button,
 a {
     cursor: pointer;
-
+    -webkit-tap-highlight-color: transparent;
 }
 
 button:active {
