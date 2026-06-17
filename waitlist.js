@@ -46,6 +46,11 @@ waitlistForm.addEventListener('submit', (event) => {
     })
     .then(response => {
         if (response.status === 200) {
+
+            gtag('event', 'join_waitlist', {
+                'event_category': 'engagement',
+                'event_label': 'Waitlist Form Submitted'
+            });
             
             joinWaitlistBtn.innerHTML = `Successfully Joined! <i class="fa-solid fa-check"></i>`;
             joinWaitlistBtn.classList.add('join-success');
