@@ -92,3 +92,9 @@ function handleFailure() {
 closeBtn.addEventListener('click', () => {
     popupOverlay.classList.remove('show-popup');
 });
+
+// form error validation for iphone/safari users
+document.querySelector('form').addEventListener('submit', function(e) {
+    if (!this.reportValidity()) 
+        e.preventDefault();
+});
