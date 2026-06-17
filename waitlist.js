@@ -47,10 +47,14 @@ waitlistForm.addEventListener('submit', (event) => {
     .then(response => {
         if (response.status === 200) {
 
-            gtag('event', 'join_waitlist', {
-                'event_category': 'engagement',
-                'event_label': 'Waitlist Form Submitted'
-            });
+            if (typeof gtag === 'function') {
+                gtag('event', 'join_waitlist', {
+                    'event_category': 'engagement',
+                    'event_label': 'Waitlist Form Submitted'
+                });
+            } else {
+                console.warn("Google Analytics gtag script hasn't loaded yet.");
+            }
             
             joinWaitlistBtn.innerHTML = `Successfully Joined! <i class="fa-solid fa-check"></i>`;
             joinWaitlistBtn.classList.add('join-success');
