@@ -1,17 +1,9 @@
 {
     "cleanUrls": true,
-    "routes": [
+    "rewrites": [
         {
-            "src": "/waitlist.html",
-            "dest": "/waitlist.html"
-        },
-        {
-            "src": "/waitlist",
-            "dest": "/waitlist.html"
-        },
-        {
-            "src": "/",
-            "dest": "/waitlist.html"
+            "source": "/",
+            "destination": "/waitlist.html"
         }
     ]
 }
