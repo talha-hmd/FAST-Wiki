@@ -47,6 +47,7 @@ waitlistForm.addEventListener('submit', (event) => {
     .then(response => {
         if (response.status === 200) {
 
+            // making a Google Analytics event specifically for this form submit button
             if (typeof gtag === 'function') {
                 gtag('event', 'join_waitlist', {
                     'event_category': 'engagement',
