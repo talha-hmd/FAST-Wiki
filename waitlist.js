@@ -32,7 +32,7 @@ waitlistForm.addEventListener('submit', (event) => {
 
     // Convert form fields to JSON exactly
     const formData = new FormData(waitlistForm);
-    const object = Object.fromEntries(formData.entries());
+    const object = Object.fromEntries(formData.entries()); // Convert to object e.g. { email: "W5H4o@example.com" }
     const json = JSON.stringify(object);
 
     // Submit via AJAX Fetch
@@ -42,7 +42,7 @@ waitlistForm.addEventListener('submit', (event) => {
             'Content-Type': 'application/json',
             'Accept': 'application/json'
         },
-        body: json
+        body: json // form data
     })
     .then(response => {
         if (response.status === 200) {

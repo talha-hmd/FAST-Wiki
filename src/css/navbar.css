@@ -1,0 +1,46 @@
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 1rem;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+.navbar-container__menu .fa-bars {
+    font-size: 2rem;
+    cursor: pointer;
+
+    transform: scale(0.95);
+}
+
+.navbar-container__logo {
+    font-weight: 500;
+    font-size: 2.6rem;
+    cursor: pointer;
+}
+
+.navbar-container__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.1rem;
+    font-size: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.navbar-container__links .fa-linkedin-in:active {
+    color: #0A66C2;
+    transform: scale(0.95);
+}
+
+.navbar-container__links .fa-whatsapp:active {
+    color: lightgreen;
+    transform: scale(0.95);
+}
+
+
+
+

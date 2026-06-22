@@ -1,0 +1,75 @@
+/* Align the icon and Section heading on one line */
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0.8rem;
+    gap: 0.5rem;
+    background-color: inherit;
+    border-right: 1px solid black;
+
+    max-width: 240px;
+    height: 100vh;
+}
+
+.sidebar-container__title {
+    font-family: 'Instrument Serif', serif;
+    font-size: 2.3rem;
+    font-weight: 400;
+    text-wrap: nowrap;
+
+    text-align: left;
+}
+
+hr {
+    border: 1px solid black;
+    margin: 0;
+}
+
+.sidebar-container__header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: black;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.sidebar-container__header h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+/* The vertical line trick */
+.sidebar-container__sub-links {
+    font-family: 'Outfit', sans-serif;
+    border-left: 1px solid black; 
+    margin-left: 0.5rem;           
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;                  /* vertical spacing between sub-links */
+    margin-bottom: 1.5rem;         /* Space before the next section starts */
+}
+
+.sidebar-container__sub-links a {
+    font-size: 0.9rem;
+    color: grey;                
+    transition: color 0.2s ease;
+
+    margin-left: 0.5rem;
+    padding: 0.1rem 0.7rem;
+    border-radius: 0.3rem;
+}
+
+.sidebar-container__sub-links a:hover {
+    color: black;
+    background-color: lightgrey;
+}
+
+.sidebar-container__sub-links a:active {
+    color: black;
+}
