@@ -1,120 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Links -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="waitlist.css">
+    <script src="waitlist.js" defer></script>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WHR8RHR86W"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-WHR8RHR86W');
+    </script>
+
+    <!-- Microsoft clarity tag -->
+    <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "x8k7maatmi");
+    </script>
+
+
+    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FAST NUCES Admissions Guide & FAQs | FAST Wiki</title>
+    
+    <meta name="description" content="The ultimate unofficial FAST NUCES admissions wiki. Get clear, student-driven answers on aggregate requirements, entry test preparation, fee structures, and FAQs.">
+    <meta name="keywords" content="FAST NUCES, FAST university admission, FAST aggregate calculator, FAST entry test, FAST NUCES Islamabad, FAST Lahore, FAST Karachi, NU test prep">
     <meta name="author" content="FAST Wiki Community">
     <meta name="robots" content="index, follow">
-
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/src/css/main.css">
-    <link rel="stylesheet" href="/src/css/navbar.css">
-    <link rel="stylesheet" href="/src/css/sidebar.css">
-    <script src="/src/js/components.js" defer></script>
-
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:image" content="https://fast-wikipedia.vercel.app/preview_img.png">
-    <meta name="twitter:image" content="https://fast-wikipedia.vercel.app/preview_img.png">
-
-    <title>FAST-Wiki | The Ultimate FAST-NUCES Student Guide</title>
-    <meta name="description" content="Stop guessing. Get straight answers about FAST-NUCES admissions, entry tests, the infamous 'Ragra' academic grind, and career exit strategies.">
-    <meta name="keywords" content="FAST NUCES, FAST university, NU entry test, aggregate calculator, academic ragra, student portal, FAST Lahore, FAST Islamabad, FAST Karachi">
-    <meta property="og:url" content="https://fast-wikipedia.vercel.app/">
     
-    <meta property="og:title" content="FAST-Wiki | The Ultimate FAST-NUCES Student Guide">
-    <meta property="og:description" content="Stop guessing. Get straight answers about FAST-NUCES admissions, entry test patterns, and academic survival. Built by students, for students.">
-    <meta name="twitter:title" content="FAST-Wiki | The Ultimate FAST-NUCES Student Guide">
-    <meta name="twitter:description" content="Stop guessing. Get straight answers about FAST-NUCES admissions, entry test patterns, and academic survival. Built by students, for students.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fast-wikipedia.vercel.app/"> <!-- Replace with your website URL -->
+    <meta property="og:title" content="FAST NUCES Admissions Guide & FAQs | FAST Wiki">
+    <meta property="og:description" content="Stop guessing. Get straight answers about FAST-NUCES admissions, aggregates, and entry tests from the ultimate unofficial student handbook.">
+
+    <meta property="og:image" content="https://fast-wikipedia.vercel.app/preview_img.png"> 
+
+    <meta property="twitter:card" content="summary_large_image"> 
+    <meta property="twitter:title" content="FAST NUCES Admissions Guide & FAQs | FAST Wiki">
+    <meta property="twitter:description" content="Stop guessing. Get straight answers about FAST-NUCES admissions from the ultimate unofficial student handbook.">
+    
+    <meta property="twitter:image" content="https://fast-wikipedia.vercel.app/preview_img.png">
 </head>
-<body>
-    <!-- The navbar will go here (through js injection) -->
-    <header id="navbar-container"></header>
+    <body>
+        <div class="navbar-container">
+            <h1 class="navbar-container__logo">FAST <span>Wiki</span></h1>
 
-    <div class="docs-layout">
-        <aside id="sidebar-container"></aside>
-
-        <main class="docs-layout__content">
-            <h1>Start by selecting your topic of <span>interest.</span></h1>
-            
-            <ul class="docs-layout__sections-container">
+            <ul class="navbar-container__links">
                 <li>
-                    <h2>Admissions</h2>
-                    <hr>
-
-                    <p class="sections-container__description">This section answers the first question every applicant asks: <span>"Can I get in, and how?"</span> It covers eligibility, 
-                        the three admission streams, the entry test, the merit system, the application procedure, and the comparative landscape.</p>
-
-                    <button class="docs-layout__sections-container__button">
-                        <p>View sections</p>
-                        <i class="fa-solid fa-arrow-right-long"></i>
-                    </button>
+                    <a href="https://www.linkedin.com/in/muhammad-talha-hmd/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
                 </li>
-
                 <li>
-                    <h2>Academics</h2>
-                    <hr>
-
-                    <p class="sections-container__description">This section answers <span>"Will I survive, and how does the system work?"</span> It grounds every claim in the official 
-                        Academic Rules & Regulations, then layers the lived reality on top.</p>
-
-                    <button class="docs-layout__sections-container__button">
-                        <p>View sections</p>
-                        <i class="fa-solid fa-arrow-right-long"></i>
-                    </button>
-                </li>
-
-                <li>
-                    <h2>Finances</h2>
-                    <hr>
-
-                    <p class="sections-container__description">This section answers <span>"Can I afford it, and what happens if I can't?"</span></p>
-
-                    <button class="docs-layout__sections-container__button">
-                        <p>View sections</p>
-                        <i class="fa-solid fa-arrow-right-long"></i>
-                    </button>
-                </li>
-
-                <li>
-                    <h2>Campus Life</h2>
-                    <hr>
-
-                    <p class="sections-container__description">The section answers <span>"What is it actually like to study there?"</span> — separating the satire from the reality.</p>
-
-                    <button class="docs-layout__sections-container__button">
-                        <p>View sections</p>
-                        <i class="fa-solid fa-arrow-right-long"></i>
-                    </button>
-                </li>
-
-                <li>
-                    <h2>Career & Future</h2>
-                    <hr>
-
-                    <p class="sections-container__description">This section answers <span>"What happens after I graduate?"</span> — clarity between local employment and going abroad.</p>
-
-                    <button class="docs-layout__sections-container__button">
-                        <p>View sections</p>
-                        <i class="fa-solid fa-arrow-right-long"></i>
-                    </button>
-                </li>
-
-                <li>
-                    <h2>Help & FAQs</h2>
-                    <hr>
-
-                    <p class="sections-container__description">This section includes some frequently asked questions and answers. As well as places where you could ask for more help.</p>
-
-                    <button class="docs-layout__sections-container__button">
-                        <p>View sections</p>
-                        <i class="fa-solid fa-arrow-right-long"></i>
-                    </button>
+                    <a href="https://chat.whatsapp.com/FldnfOWBpvdIFQc6bPh54m" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
                 </li>
             </ul>
-        </main>
-    </div>
+        </div>
 
-</body>
+        <main class="hero-container">
+            <div class="hero-container__content">
+                <h1 class="hero-container__title">
+                    Your Guide to <span id="hero-container__fast-span">FAST-NUCES</span>.
+                </h1>
+
+                <p class="hero-container__description">
+                    Stop chasing answers across Reddit, Facebook and Whatsapp. Get straight, un-cluttered insights into the entire FAST admission pipeline. 
+                    <br/>Join the waitlist for instant access when we go live!
+                </p>
+            </div>
+            
+            <form class="waitlist-container" action="https://api.web3forms.com/submit" method="POST">
+                <!-- This is the secret key you get from web3forms -->
+                <input type="hidden" name="access_key" value="2f9cf657-1895-4457-acd1-40515264c352">
+
+                <div class="waitlist-container__input">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" name="email" autocomplete="off" required placeholder="Enter your email to skip the confusion!">
+                </div>
+
+                <button class="waitlist-container__button" type="submit">
+                    Join Waitlist 
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </form>
+        </main>
+
+        <div class="popup-overlay">
+            <div class="popup-box">
+                <div class="popup-box__heading">
+                    <h2>Wanna Join Us?</h2>
+                    <button class="popup-box__close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <hr>
+
+                <p class="popup-box__description">
+                    Join us on Whatsapp (1000+ members) or LinkedIn to get the latest updates and talk to our community.
+                </p>
+
+                <ul class="popup-box__links">
+                    <li>
+                        <a  class="popup-box__whatsapp" href="https://chat.whatsapp.com/FldnfOWBpvdIFQc6bPh54m" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="popup-box__linkedin" href="https://www.linkedin.com/in/muhammad-talha-hmd/" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
 </html>
