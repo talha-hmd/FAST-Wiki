@@ -41,6 +41,28 @@
     transform: scale(0.95);
 }
 
+.navbar-container__links a {
+    color: white;
+    text-decoration: none;
+}
 
+.navbar-container__profile-link {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1rem;
+}
+
+.navbar-container__profile-link i {
+    font-size: 1.7rem;
+}
+
+.navbar-container__profile-link:hover {
+    color: #0A66C2;
+}
+
+.navbar-container__links .fa-whatsapp:hover {
+    color: lightgreen;
+}
 
 
