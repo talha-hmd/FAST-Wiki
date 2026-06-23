@@ -3,7 +3,31 @@
     "rewrites": [
         {
             "source": "/",
-            "destination": "/waitlist.html"
+            "destination": "/homepage.html"
+        },
+        {
+            "source": "/academics/:subsection",
+            "destination": "/src/sections/academics/:subsection/:subsection.html"
+        },
+        {
+            "source": "/admissions/:subsection",
+            "destination": "/src/sections/admissions/:subsection/:subsection.html"
+        },
+        {
+            "source": "/campus-life/:subsection",
+            "destination": "/src/sections/campus-life/:subsection/:subsection.html"
+        },
+        {
+            "source": "/career/:subsection",
+            "destination": "/src/sections/career/:subsection/:subsection.html"
+        },
+        {
+            "source": "/finances/:subsection",
+            "destination": "/src/sections/finances/:subsection/:subsection.html"
+        },
+        {
+            "source": "/help/:subsection",
+            "destination": "/src/sections/help/:subsection/:subsection.html"
         }
     ]
 }
