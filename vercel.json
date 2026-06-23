@@ -7,27 +7,27 @@
         },
         {
             "source": "/academics/:subsection",
-            "destination": "/src/sections/academics/:subsection/:subsection.html"
+            "destination": "/academics/:subsection"
         },
         {
             "source": "/admissions/:subsection",
-            "destination": "/src/sections/admissions/:subsection/:subsection.html"
+            "destination": "/admissions/:subsection"
         },
         {
             "source": "/campus-life/:subsection",
-            "destination": "/src/sections/campus-life/:subsection/:subsection.html"
+            "destination": "/campus-life/:subsection"
         },
         {
             "source": "/career/:subsection",
-            "destination": "/src/sections/career/:subsection/:subsection.html"
+            "destination": "/career/:subsection"
         },
         {
             "source": "/finances/:subsection",
-            "destination": "/src/sections/finances/:subsection/:subsection.html"
+            "destination": "/finances/:subsection"
         },
         {
             "source": "/help/:subsection",
-            "destination": "/src/sections/help/:subsection/:subsection.html"
+            "destination": "/help/:subsection"
         }
     ]
 }
