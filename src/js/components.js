@@ -44,7 +44,52 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .then(html => {
             sidebarContainer.innerHTML = html;
+
+            const sidebarButton = document.querySelector('.navbar-container__menu-button');
+            const sidebar = document.getElementById('sidebar-container');
+
+            if (sidebarButton && sidebar) {
+                sidebarButton.addEventListener('click', () => {
+                    sidebar.classList.toggle('sidebar-closed');
+                });
+            }
         }).catch(error => {
             console.error('Error fetching sidebar:', error);
+    });
+
+    fetch('/components/linkedinCard.html')
+    .then(response => {
+        if (response.ok) {
+            return response.text(); 
+        }
+    })
+    .then(html => {
+        const linkedinCardContainer = document.getElementById('linkedin-card-container');
+        linkedinCardContainer.innerHTML = html;
+
+        const linkedinButton = document.querySelector('.navbar-container__profile-link');
+        const linkedinPopup = document.querySelector('.popup-overlay'); 
+        const popupClose = document.querySelector('.popup-box__close');
+
+        if (linkedinButton && linkedinPopup) {
+
+            linkedinButton.addEventListener('click', (e) => {
+                e.preventDefault(); // prevents the link from refreshing the page
+                linkedinPopup.classList.toggle('show-popup');
+            });
+
+            // Close the popup if they click outside the cards
+            linkedinPopup.addEventListener('click', (e) => {
+                if (e.target === linkedinPopup) {
+                    linkedinPopup.classList.remove('show-popup');
+                }
+            });
+
+            popupClose.addEventListener('click', () => {
+                linkedinPopup.classList.remove('show-popup');
+            });
+        }
+    }).catch(error => {
+        console.error('Error fetching linkedin card:', error);
     });
 });

@@ -1,0 +1,77 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;            
+    height: 100vh;           
+    background-color: rgba(0, 0, 0, 0.4); /* 40% transparent black */
+    backdrop-filter: blur(2px); /* subtle background blur  */
+
+    display: none;           /* Hidden by def */
+    justify-content: center; 
+    align-items: center;     
+    
+    z-index: 10000;          
+}
+
+.popup-overlay.show-popup {
+    display: flex;           /* JS will toggle this class */
+}
+
+.popup-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.2rem;
+    max-width: 500px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.popup-box__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.popup-box__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+
+    margin-top: 1.5rem;
+}
+
+.popup-box__links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+
+    font-family: 'Instrument Serif', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+
+    border: 1px solid black;
+    padding: 0.2rem 2rem;
+    transition: all 0.2s;
+}
+
+.popup-box__links .popup-box__linkedin:hover {
+    background-color: #0A66C2;
+    color: white;
+}
+
+.popup-box__links .popup-box__linkedin:active {
+    background-color: #0A66C2;
+    color: white;
+    transform: scale(0.95);
+}
