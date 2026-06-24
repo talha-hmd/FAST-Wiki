@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Main Landing Hub -->
+    <url>
+        <loc>https://fast-wikipedia.vercel.app/</loc>
+        <priority>1.00</priority>
+    </url>
+
+    <!-- Admissions Module -->
+    <url>
+        <loc>https://fast-wikipedia.vercel.app/admissions/overview</loc>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://fast-wikipedia.vercel.app/admissions/entry-tests</loc>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://fast-wikipedia.vercel.app/admissions/sat-test</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://fast-wikipedia.vercel.app/admissions/how-to-apply</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://fast-wikipedia.vercel.app/admissions/degree-comparison</loc>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://fast-wikipedia.vercel.app/admissions/university-comparisons</loc>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- Academics Module -->
+    <url>
+        <loc>https://fast-wikipedia.vercel.app/academics/academic-rules</loc>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://fast-wikipedia.vercel.app/academics/warnings</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://fast-wikipedia.vercel.app/academics/failsafes</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://fast-wikipedia.vercel.app/academics/grading</loc>
+        <priority>0.75</priority>
+    </url>
+    <url>
+        <loc>https://fast-wikipedia.vercel.app/academics/study-strategy</loc>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- Finances Module -->
+    <url>
+        <loc>https://fast-wikipedia.vercel.app/finances/fee-structure</loc>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://fast-wikipedia.vercel.app/finances/financial-aid</loc>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://fast-wikipedia.vercel.app/finances/affordability</loc>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- Campus Life Module -->
+    <url>
+        <loc>https://fast-wikipedia.vercel.app/campus-life/culture</loc>
+        <priority>0.75</priority>
+    </url>
+    <url>
+        <loc>https://fast-wikipedia.vercel.app/campus-life/gender-norms</loc>
+        <priority>0.70</priority>
+    </url>
+
+    <!-- Career & Future Module -->
+    <url>
+        <loc>https://fast-wikipedia.vercel.app/career/local-jobs</loc>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://fast-wikipedia.vercel.app/career/specialisations</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://fast-wikipedia.vercel.app/career/going-abroad</loc>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- Help & Support Center -->
+    <url>
+        <loc>https://fast-wikipedia.vercel.app/help/faq</loc>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://fast-wikipedia.vercel.app/help/glossary</loc>
+        <priority>0.75</priority>
+    </url>
+</urlset>

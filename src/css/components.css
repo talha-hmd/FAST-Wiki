@@ -226,8 +226,8 @@
     color: #222;
 }
 
-/* links decorations */
-.article-content a:not(.article-breadcrumb a):not(.article-footer a):not(.article-footer span) {
+/* links decoration */
+.article-content a:not(.article-breadcrumb a):not(.article-footer a) {
     color: #2563eb;
     font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
     font-size: 0.95em;
@@ -238,9 +238,30 @@
     transition: all 0.2s ease;
 }
 
-.article-content a:not(.article-breadcrumb a):not(.article-footer a):not(.article-footer span):hover,
-.article-content a:not(.article-breadcrumb a):not(.article-footer a):not(.article-footer span):active {
+.article-content a:not(.article-breadcrumb a):not(.article-footer a):hover,
+.article-content a:not(.article-breadcrumb a):not(.article-footer a):active {
     color: #1d4ed8;
     background-color: #e2e8f0;
     text-decoration: underline;
 }
+
+.article-footer__next {
+    display: inline-flex;
+    flex-direction: column;
+    text-decoration: none; 
+    font-size: 1.2em;      
+}
+
+.article-footer__next span {
+    font-size: 0.65em;     
+    color: #64748b;       
+    font-family: inherit;  
+    background: none;      
+    padding: 0;            
+    margin-bottom: 4px;    
+}
+
+.article-footer__next:hover {
+    text-decoration: underline;
+}
+

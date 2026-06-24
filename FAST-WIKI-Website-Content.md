@@ -14,7 +14,7 @@ Provenance convention used throughout:
 
 # MACRO-SECTION 1 — Admissions
 
-The Admissions macro-section answers the first question every applicant asks: *"Can I get in, and how?"* It covers eligibility, the three admission streams, the entry test, the merit system, the application procedure, and the comparative landscape.
+The Admissions macro-section answers the first question every applicant asks: <em>"Can I get in, and how?"</em> It covers eligibility, the three admission streams, the entry test, the merit system, the application procedure, and the comparative landscape.
 
 ---
 
@@ -36,7 +36,7 @@ The Admissions macro-section answers the first question every applicant asks: *"
 - <strong>NU Test</strong> — FAST's own entrance exam. Largest seat pool, lowest closing merit. <strong>Recommended default.</strong>
 - <strong>SAT (SAT-I)</strong> — separate merit list, smaller self-selecting pool, higher closing percentage.
 - <strong>NTS NAT</strong> — smallest reserved seat slice; historically requires a near-perfect score. <strong>Avoid unless your NAT score is near-perfect.</strong>
-- Full comparison lives on the *Stream Comparison* page (1.3).
+- Full comparison lives on the <em>Stream Comparison</em> page (1.3).
 
 #### Where the Admissions Information Actually Lives
 
@@ -103,7 +103,7 @@ The Admissions macro-section answers the first question every applicant asks: *"
 - Your single most consequential admissions choice is the stream, because each competes for a different seat pool with a different closing merit.
 - <strong>NU Test:</strong> bulk of seats → most forgiving closing merit → safest for the median applicant.
 - <strong>SAT:</strong> smaller, self-selecting pool → higher closing percentage → viable only if you already hold a strong SAT (~1250+ is "tough even for A-Level students"; 1300+ opens real possibilities).
-- <strong>NAT:</strong> thinnest reserved slice → historically near-perfect required → *"Do not ever go for NTS NAT."*
+- <strong>NAT:</strong> thinnest reserved slice → historically near-perfect required → <em>"Do not ever go for NTS NAT."</em>
 
 #### The Aggregate Formulas
 
@@ -138,7 +138,7 @@ The Admissions macro-section answers the first question every applicant asks: *"
 #### Which Sections Decide Your Aggregate
 
 - For computing applicants, <strong>Advanced Math and Analytical Reasoning are the swing sections.</strong>
-- Engineering-background students repeatedly report Basic Math <strong>word problems</strong> as their weakness — the fix is *translation* practice (paragraph of English → equation), not more raw calculation drill.
+- Engineering-background students repeatedly report Basic Math <strong>word problems</strong> as their weakness — the fix is <em>translation</em> practice (paragraph of English → equation), not more raw calculation drill.
 - Analytical Reasoning is the most efficiently improvable: finite, pattern-recognisable question types; a few weeks of puzzle practice yields disproportionate gains.
 - English is steady, not a swing section for most.
 
@@ -252,14 +252,14 @@ The Admissions macro-section answers the first question every applicant asks: *"
 
 - FAST = <strong>middle tier on price, top tier on local employer preference.</strong>
 - A student who clears FAST merit and absorbs the fee (post-aid) buys the strongest domestic CV filter in Pakistani computing.
-- A student whose end goal is a funded master's abroad is usually better served by NUST/LUMS (gentler grading, stronger international pipelines) or a public university (affordable, preserves GPA) — see the *Going Abroad* page (5.2) for the full fork.
+- A student whose end goal is a funded master's abroad is usually better served by NUST/LUMS (gentler grading, stronger international pipelines) or a public university (affordable, preserves GPA) — see the <em>Going Abroad</em> page (5.2) for the full fork.
 - The decision is never "which university is best" — it's "which is best <strong>for my specific end goal at my specific budget.</strong>"
 
 ---
 
 # MACRO-SECTION 2 — Academics
 
-The Academics macro-section answers *"Will I survive, and how does the system work?"* It grounds every claim in the official Academic Rules & Regulations, then layers the lived reality on top.
+The Academics macro-section answers <em>"Will I survive, and how does the system work?"</em> It grounds every claim in the official Academic Rules & Regulations, then layers the lived reality on top.
 
 ---
 
@@ -335,7 +335,7 @@ The Academics macro-section answers *"Will I survive, and how does the system wo
 
 - <strong>SGPA</strong> = weighted average of grade points earned in a semester (weights = course credit hours ÷ total credit hours that semester).
 - <strong>CGPA</strong> = weighted average of all courses taken so far.
-- <strong>For repeat courses, only the most recent grade points are used</strong> — even if the repeat grade is *lower* than the earlier attempt.
+- <strong>For repeat courses, only the most recent grade points are used</strong> — even if the repeat grade is <em>lower</em> than the earlier attempt.
 
 #### Honours Lists
 
@@ -363,7 +363,7 @@ The Academics macro-section answers *"Will I survive, and how does the system wo
 
 #### Where the Critique Becomes Legitimate
 
-- <strong>FAST's grading is materially stricter than peers</strong> — consequences for anyone whose plan needs a high GPA (see the *GPA Economy* page, 2.4).
+- <strong>FAST's grading is materially stricter than peers</strong> — consequences for anyone whose plan needs a high GPA (see the <em>GPA Economy</em> page, 2.4).
 - <strong>Industry skills are largely self-sourced</strong> — students report the first two semesters teach little directly applicable to industry; the realisation lands around semester 4–5; the internship/job is won through self-study. Not unique to FAST, but FAST combines it with unusually heavy coursework, narrowing the window to bootstrap skills.
 
 #### The Snowball Effect
@@ -387,7 +387,7 @@ The Academics macro-section answers *"Will I survive, and how does the system wo
 
 - Reported: FAST fails ~40% of the batch in <strong>Programming Fundamentals</strong> every year (figure is approximate but explains first-semester trauma).
 - <strong>OOP</strong> catches those who barely passed PF without grasping the concepts.
-- <strong>Failing a first-semester course is recoverable and sometimes beneficial</strong> if the repeat rebuilds concepts (see the *Failsafes* page, 2.6).
+- <strong>Failing a first-semester course is recoverable and sometimes beneficial</strong> if the repeat rebuilds concepts (see the <em>Failsafes</em> page, 2.6).
 
 #### Layer 3 — The Institutional Comparison
 
@@ -471,7 +471,7 @@ The Academics macro-section answers *"Will I survive, and how does the system wo
 - You can also repeat a passed course to <strong>improve</strong> your grade.
 - <strong>Only the most recent grade counts toward CGPA</strong> — even if it's lower.
 - A <strong>repeat count appears on the transcript</strong> for all repeated courses.
-- <strong>Reality:</strong> repeating a foundational course (PF is the canonical example) in the very next semester to *rebuild concepts* is one of the clearest success patterns — graduates who did this report higher final CGPAs than classmates who never failed but coasted on the borderline.
+- <strong>Reality:</strong> repeating a foundational course (PF is the canonical example) in the very next semester to <em>rebuild concepts</em> is one of the clearest success patterns — graduates who did this report higher final CGPAs than classmates who never failed but coasted on the borderline.
 
 #### Final Year Project (FYP) Registration
 
@@ -511,7 +511,7 @@ The Academics macro-section answers *"Will I survive, and how does the system wo
 #### The Reality: A Wrecked First Year Is Recoverable
 
 - Later semesters carry enough credit weight to lift the cumulative average.
-- Former faculty to a student at 2.53 after a bad first year: *"the CGPA at the end of first year can be improved quite easily in the latter years."*
+- Former faculty to a student at 2.53 after a bad first year: <em>"the CGPA at the end of first year can be improved quite easily in the latter years."</em>
 - Documented trajectory: 1.6 first-semester CGPA → 3.04 by graduation, after the study method was rebuilt (not just more effort within a broken method).
 
 #### When Admission Is Closed
@@ -634,7 +634,7 @@ The Academics macro-section answers *"Will I survive, and how does the system wo
 
 # MACRO-SECTION 3 — Finances
 
-The Finances macro-section answers *"Can I afford it, and what happens if I can't?"*
+The Finances macro-section answers <em>"Can I afford it, and what happens if I can't?"</em>
 
 ---
 
@@ -663,7 +663,7 @@ The Finances macro-section answers *"Can I afford it, and what happens if I can'
 #### Indicative Year-1 Outlay (pre-aid, excl. hostel)
 
 - About Rs. 400,000–510,000 across two semesters (reported). The exact figure depends on your program, campus, and the current FeeStructure page.
-- The pain of FAST's fee is less the headline number and more <strong>how little of it is offset by aid for the median middle-income applicant</strong> (see the *Financial Assistance* page, 3.2).
+- The pain of FAST's fee is less the headline number and more <strong>how little of it is offset by aid for the median middle-income applicant</strong> (see the <em>Financial Assistance</em> page, 3.2).
 
 #### The Refund Window (HEC 2024 framework — uniform across FAST/NUST/GIKI)
 
@@ -699,7 +699,7 @@ The Finances macro-section answers *"Can I afford it, and what happens if I can'
 
 - ~Rs. 120,000 relief/semester × 8 semesters ≈ Rs. 960,000–1,000,000 total debt → <strong>~Rs. 21,000/month minimum</strong> over the 4-year window after graduation.
 - A 25%-FA recipient owing ~Rs. 280,000 reported minimum payments of Rs. 10,000–15,000/month.
-- <strong>Takeaway:</strong> FA makes FAST *accessible*, not *cheap* — it converts an upfront impossibility into a post-graduation annuity. If your plan is to leave Pakistan immediately, the repayment schedule can become a leash.
+- <strong>Takeaway:</strong> FA makes FAST <em>accessible</em>, not <em>cheap</em> — it converts an upfront impossibility into a post-graduation annuity. If your plan is to leave Pakistan immediately, the repayment schedule can become a leash.
 
 ---
 
@@ -753,7 +753,7 @@ The Finances macro-section answers *"Can I afford it, and what happens if I can'
 
 #### The Consensus (including former faculty)
 
-- Former faculty (recluze), on that case: *"CS in IST would be great for you... People seem to give way too much weightage to the university name. It matters, but not that much. Spend time polishing your skills while you're in your early semesters and you would do great in IST as well."*
+- Former faculty (recluze), on that case: <em>"CS in IST would be great for you... People seem to give way too much weightage to the university name. It matters, but not that much. Spend time polishing your skills while you're in your early semesters and you would do great in IST as well."</em>
 - IST is genuinely strong; its load, while heavy, leaves room for a part-time job — FAST's Ragra makes that nearly impossible.
 - The financial difference (fee + hostel + incidentals + FA repayment annuity vs. IST/UET/PUCIT/NED outlay), compounded across 8 semesters, can exceed a million rupees — about the size of the FA debt you'd carry into graduation.
 
@@ -765,17 +765,17 @@ The Finances macro-section answers *"Can I afford it, and what happens if I can'
 
 #### The Affordability Decision Tree
 
-1. Can your family absorb FAST's fee *without* aid, or with aid but without borrowing beyond FA itself? → FAST's domestic-career upside is real.
+1. Can your family absorb FAST's fee <em>without</em> aid, or with aid but without borrowing beyond FA itself? → FAST's domestic-career upside is real.
 2. If FAST requires external borrowing on top of FA → compare total 4-year outlay (fee + hostel + incidentals + FA annuity) vs. IST/UET/PUCIT/NED/COMSATS.
-3. If the gap is large and your goal is a *local* job → the cheaper institution with strong self-built skills frequently wins. The tag clears CV filters, but so does a strong GitHub and a referral; skills dominate the tag after the first interview.
-4. If your goal is a *funded master's abroad* → the GPA-preservation argument points you toward the institution with gentler grading (see the *Going Abroad* page, 5.2).
+3. If the gap is large and your goal is a <em>local</em> job → the cheaper institution with strong self-built skills frequently wins. The tag clears CV filters, but so does a strong GitHub and a referral; skills dominate the tag after the first interview.
+4. If your goal is a <em>funded master's abroad</em> → the GPA-preservation argument points you toward the institution with gentler grading (see the <em>Going Abroad</em> page, 5.2).
 5. <strong>Prefer BS CS over a specialisation when uncertain</strong> — it keeps every door open.
 
 ---
 
 # MACRO-SECTION 4 — Campus Life & Culture
 
-The Campus Life macro-section answers *"What is it actually like to study there?"* — separating the satire from the reality.
+The Campus Life macro-section answers <em>"What is it actually like to study there?"</em> — separating the satire from the reality.
 
 ---
 
@@ -792,13 +792,13 @@ The Campus Life macro-section answers *"What is it actually like to study there?
 
 #### The Counter-Current: The Deficit Is Self-Inflicted
 
-- The senior roadmap argues the social-life deficit is *self-inflicted* by students who isolate themselves.
+- The senior roadmap argues the social-life deficit is <em>self-inflicted</em> by students who isolate themselves.
 - <strong>Societies and cross-class networking are the remedy.</strong> Join societies in semester one (they're active only in short bursts, so the time cost is bounded); build connections across sections and departments rather than retreating into a two-person clique.
 - Treat the social network as <strong>academic infrastructure</strong> — the same network that makes assignments/group projects survivable is the network that produces alumni referrals years later, when "the majority of seniors in higher posts are also FASTians."
 
 #### The Synthesised Truth
 
-- FAST does not *provide* a rich social life the way a residential campus does, but it *permits* one for students who actively construct it — and the construction pays both academic and career dividends.
+- FAST does not <em>provide</em> a rich social life the way a residential campus does, but it <em>permits</em> one for students who actively construct it — and the construction pays both academic and career dividends.
 
 ---
 
@@ -811,13 +811,13 @@ The Campus Life macro-section answers *"What is it actually like to study there?
 #### The Viral Post Is a Joke
 
 - A viral "rules between genders" post proposed "Gender Interaction Zones," email-only cross-gender communication starting with "Assalamu Alaikum, respected fellow student," a "CCTV facial-recognition AI" detecting "smiles, stares, and excessive niceness," and an "eye-contact limit of 0.003 seconds" triggering "auto-expulsion and airdrop to Jamia Bin Qasim."
-- <strong>This is satire.</strong> Every commenter recognised it as ragebait; a student who studies at FAST confirms *"I knew that this wasn't real... I am studying at FAST."*
+- <strong>This is satire.</strong> Every commenter recognised it as ragebait; a student who studies at FAST confirms <em>"I knew that this wasn't real... I am studying at FAST."</em>
 
 #### The Real Norms
 
-- The post is funny precisely because the *anxiety* it mocks is real — incoming students genuinely worry about gender interaction at a conservative institution — but the *rules* it describes do not exist.
+- The post is funny precisely because the <em>anxiety</em> it mocks is real — incoming students genuinely worry about gender interaction at a conservative institution — but the <em>rules</em> it describes do not exist.
 - FAST's actual norms are those of a <strong>normal co-educational Pakistani university</strong> with the customary cultural courtesies.
-- A student who's been through it: *"once you enter the uni, you will know and not care about it"* — the question dissolves within weeks of enrollment.
+- A student who's been through it: <em>"once you enter the uni, you will know and not care about it"</em> — the question dissolves within weeks of enrollment.
 
 ---
 
@@ -840,9 +840,9 @@ The Campus Life macro-section answers *"What is it actually like to study there?
 
 #### The Strategic Response
 
-- Don't curse a weak teacher; learn the material from a better source (the *Study Strategy* resource stack, 2.9) on the side.
+- Don't curse a weak teacher; learn the material from a better source (the <em>Study Strategy</em> resource stack, 2.9) on the side.
 - If the <strong>entire class</strong> agrees a teacher is inadequate, <strong>escalate respectfully to the HOD</strong> to request a change — don't vent in ways that produce nothing.
-- Former faculty's resigned-but-practical framing: *"You'll have good teachers and bad teachers. Learn to live with it... Just show up, find some cherry blossom, feign interest, get through the semester and move on."*
+- Former faculty's resigned-but-practical framing: <em>"You'll have good teachers and bad teachers. Learn to live with it... Just show up, find some cherry blossom, feign interest, get through the semester and move on."</em>
 
 #### The Small Injustices
 
@@ -853,7 +853,7 @@ The Campus Life macro-section answers *"What is it actually like to study there?
 
 # MACRO-SECTION 5 — Career & After FAST
 
-The Career macro-section answers *"What happens after I graduate?"* — the fork between local employment and going abroad.
+The Career macro-section answers <em>"What happens after I graduate?"</em> — the fork between local employment and going abroad.
 
 ---
 
@@ -877,7 +877,7 @@ The Career macro-section answers *"What happens after I graduate?"* — the fork
 #### The Balanced Framing
 
 - For a student whose plan is to build a career in Pakistan, FAST is a rational, evidence-backed choice.
-- The doom-posting is a disservice to this cohort: *"you've made a good choice... you can achieve a high GPA, you can study abroad, you can land great jobs, but you will have to put in the work."*
+- The doom-posting is a disservice to this cohort: <em>"you've made a good choice... you can achieve a high GPA, you can study abroad, you can land great jobs, but you will have to put in the work."</em>
 - For local jobs, GPA matters far less than skills and projects — a 2.9 FAST grad can still land five pre-graduation offers.
 
 ---
@@ -890,8 +890,8 @@ The Career macro-section answers *"What happens after I graduate?"* — the fork
 
 #### The Case Against FAST (for the abroad path)
 
-- The core claim: FAST's stricter grading leaves you a GPA 0.5–1.0 lower than you'd have earned elsewhere for the same effort — and this gap is *disqualifying* for the abroad path because most reputable foreign master's programs set a hard <strong>3.0</strong> cut-off and competitive scholarships favour <strong>3.5+.</strong>
-- The most affecting post: a graduate chose FAST over ITU on crowd advice, graduated 2.9 while his ITU friend graduated 3.6, watched the friend land a fully-funded Finnish master's and settle abroad, and was locked out of the same programs by GPA — *"I applied to over 300 jobs abroad. All rejections. Nobody outside Pakistan seems to recognise or value a FAST degree unlike we praise it here."*
+- The core claim: FAST's stricter grading leaves you a GPA 0.5–1.0 lower than you'd have earned elsewhere for the same effort — and this gap is <em>disqualifying</em> for the abroad path because most reputable foreign master's programs set a hard <strong>3.0</strong> cut-off and competitive scholarships favour <strong>3.5+.</strong>
+- The most affecting post: a graduate chose FAST over ITU on crowd advice, graduated 2.9 while his ITU friend graduated 3.6, watched the friend land a fully-funded Finnish master's and settle abroad, and was locked out of the same programs by GPA — <em>"I applied to over 300 jobs abroad. All rejections. Nobody outside Pakistan seems to recognise or value a FAST degree unlike we praise it here."</em>
 
 #### The Brand-Recognition Problem
 
@@ -900,7 +900,7 @@ The Career macro-section answers *"What happens after I graduate?"* — the fork
 
 #### The Balanced Synthesis
 
-- FAST is <strong>not categorically bad</strong> for the abroad path — a disciplined student who clears <strong>3.3+</strong> remains eligible for most good master's programs and many scholarships, and FAST grads *do* reach Michigan, UCL, Belgium, Germany, and occasionally the Ivies (complementing a modest GPA with MOOCs, research, work experience, strong core-course grades).
+- FAST is <strong>not categorically bad</strong> for the abroad path — a disciplined student who clears <strong>3.3+</strong> remains eligible for most good master's programs and many scholarships, and FAST grads <em>do</em> reach Michigan, UCL, Belgium, Germany, and occasionally the Ivies (complementing a modest GPA with MOOCs, research, work experience, strong core-course grades).
 - The problem is <strong>probabilistic and effort-adjusted:</strong> the same student who would cruise to 3.5+ at NUST/LUMS/GIKI/ITU/a public uni must grind materially harder to reach 3.3 at FAST, and ~90% of FASTians land below 3.5.
 
 #### The Decision Rule
@@ -920,7 +920,7 @@ The Career macro-section answers *"What happens after I graduate?"* — the fork
 #### Germany (most-cited for SWE-oriented master's)
 
 - Strong SWE job market; low or zero tuition at public universities.
-- <strong>Blocked account</strong> requirement of ~€13,650 — this is a *deposit*, not an expense.
+- <strong>Blocked account</strong> requirement of ~€13,650 — this is a <em>deposit</em>, not an expense.
 - Now requires <strong>admission in hand before a visa appointment.</strong>
 - The 3.7+ fast-track interview privilege has been <strong>discontinued</strong> in the new appointment system.
 - Settling requires learning <strong>German to ~B1</strong> to find post-study work within the permitted window.
@@ -1035,7 +1035,7 @@ Six years per HEC guidelines (extendable one more year with Statutory Bodies' ap
 
 #### Academic Terms
 
-- <strong>Ragra</strong> — Urdu for *grind*; the sustained academic pressure defining FAST's weekly rhythm.
+- <strong>Ragra</strong> — Urdu for <em>grind</em>; the sustained academic pressure defining FAST's weekly rhythm.
 - <strong>Sessional 1 / Sessional 2</strong> — the two mid-semester examinations.
 - <strong>Absolutes</strong> — FAST's internal unit of marks; the pass/fail margin in a hard course can be 2–3 absolutes.
 - <strong>SGPA / CGPA</strong> — Semester / Cumulative Grade Point Average.
@@ -1054,4 +1054,4 @@ Six years per HEC guidelines (extendable one more year with Statutory Bodies' ap
 
 ---
 
-*End of the FAST-WIKI Website Content Blueprint. To make every page above discoverable, apply standard on-page SEO: one H1 per page, descriptive title tags (50–60 chars), FAQPage schema on the FAQ page, clean internal linking between hubs and articles, and re-verification of every official figure against the live `nu.edu.pk` portal before each admission cycle.*
+<em>End of the FAST-WIKI Website Content Blueprint. To make every page above discoverable, apply standard on-page SEO: one H1 per page, descriptive title tags (50–60 chars), FAQPage schema on the FAQ page, clean internal linking between hubs and articles, and re-verification of every official figure against the live `nu.edu.pk` portal before each admission cycle.</em>
