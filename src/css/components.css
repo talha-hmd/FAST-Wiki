@@ -225,3 +225,22 @@
     background-color: transparent;
     color: #222;
 }
+
+/* links decorations */
+.article-content a {
+    color: #2563eb;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    font-size: 0.95em;
+    background-color: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.article-content a:hover,
+.article-content a:active {
+    color: #1d4ed8;
+    background-color: #e2e8f0;
+    text-decoration: underline;
+}
