@@ -1,0 +1,106 @@
+.founder-section {
+    margin-bottom: 0;
+}
+
+.founder-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background-color: #2B2525;
+    color: #CECECC;
+    padding: 0.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.founder-image {
+    width: 45%;
+    max-width: 370;
+    max-height: 370px;
+    aspect-ratio: 1 / 1;
+    height: auto;
+
+    object-fit: cover;
+    border-radius: 16px;
+    flex-shrink: 0; 
+}
+
+.article__section .founder-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.article__section .founder-info__heading {
+    font-family: 'Instrument Serif', serif;
+    font-size: 3rem;
+    margin: 0 0 0.5rem 0;
+    color: #FFFFFF;
+}
+
+.article__section .founder-info__text {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+    color: #CECECC;
+}
+
+.founder-info__socials {
+    margin-top: auto;
+    display: flex;
+    gap: 1.5rem; 
+    font-size: 1.2rem;
+}
+
+.article-content .article__section .founder-info__socials a.social-link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.article-content .article__section .founder-info__socials a.social-link:hover {
+    background-color: transparent;
+}
+
+/* Styling the icons themselves */
+.founder-info__socials .fa-github-alt {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.founder-info__socials .fa-linkedin-in {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.founder-info__socials .fa-linkedin-in:hover {
+    background-color: transparent;
+    color: #0A66C2;
+}
+
+.founder-info__socials .fa-linkedin-in:active {
+    transform: scale(0.95);
+}
+
+.founder-info__socials .fa-github-alt:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.founder-info__socials .fa-github-alt:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+    .article__section-founder-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}

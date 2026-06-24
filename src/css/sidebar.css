@@ -13,6 +13,70 @@ hr {
     margin: 0;
 }
 
+.sidebar-container__searchbar {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 0.3rem;
+    padding: 0.2rem 0.6rem;
+    margin: 1rem 0;
+    gap: 0.5rem;
+    background-color: transparent;
+}
+
+.sidebar-container__searchbar i {
+    color: black;
+    font-size: 0.9rem;
+}
+
+.searchbar-btn {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    color: black;
+}
+
+.searchbar-btn::placeholder {
+    color: grey;
+}
+
+#about-us-header, 
+#support-us-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.3rem;
+}
+
+#about-us-header:hover, 
+#support-us-header:hover {
+    background-color: lightgrey;
+}
+
+#about-us-header h2, 
+#support-us-header h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+#about-us-header i, 
+#support-us-header i {
+    font-size: 1rem;
+}
+
 .sidebar-container__header {
     display: flex;
     align-items: center;
