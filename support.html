@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Us | FAST Wiki</title>
+
+    <meta name="description" content="Support FAST Wiki through donations or feedback to help us keep this student-built resource free, updated, and useful.">
+    <meta name="keywords" content="FAST Wiki support, FAST NUCES, student resource, donation, feedback">
+    <meta name="author" content="FAST Wiki">
+
+    <link rel="icon" href="/favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/css/navbar.css">
+    <link rel="stylesheet" href="/src/css/sidebar.css">
+    <link rel="stylesheet" href="/src/css/components.css">
+
+    <script src="/src/js/components.js" defer></script>
+</head>
+
+<body>
+    <header id="navbar-container"></header>
+
+    <div class="docs-layout">
+        <aside id="sidebar-container"></aside>
+
+        <main class="docs-layout__content article-content">
+            <article class="article support-page">
+
+                <nav class="article-breadcrumb">
+                    <a href="/homepage.html">Home</a>
+                    <span>/</span>
+                    <span>Support</span>
+                </nav>
+
+                <header class="article__header">
+                    <h1>Support FAST Wiki</h1>
+                    <p>
+                        Help us keep this resource free, updated, and useful for every FAST student and applicant.
+                    </p>
+                </header>
+
+                <section class="support-section">
+                    <h2>Why we need your support</h2>
+
+                    <p>
+                        FAST Wiki was built to solve a problem many students face: scattered information. Admissions, merit, academic rules, finances, campus life, and career guidance all exist somewhere, but finding clear answers often takes more time than it should.
+                    </p>
+
+                    <p>
+                        We spent countless hours collecting information, organizing pages, improving the design, testing links, adding search functionality, and making the platform easier to use. The website is free for everyone, but keeping it online still has costs like domain renewal and future improvements.
+                    </p>
+                </section>
+
+                <section class="support-card">
+                    <div class="support-card__content">
+                        <span class="support-card__label">
+                            <i class="fa-solid fa-heart-circle-plus"></i>
+                            Student-built project
+                        </span>
+
+                        <h2>Support the project</h2>
+
+                        <p>
+                            If FAST Wiki helped you save time, understand FAST better, or made your admission journey a little easier, you can support us with a small contribution.
+                        </p>
+
+                        <ul>
+                            <li>Helps cover domain cost</li>
+                            <li>Supports future improvements</li>
+                            <li>Keeps FAST Wiki free for students</li>
+                        </ul>
+
+                        <button type="button" class="support-btn" id="openJazzCashModal">
+                            Donate via JazzCash
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </button>
+                    </div>
+                </section>
+
+                <section class="support-section feedback-section">
+                    <h2>Help us improve FAST Wiki</h2>
+
+                    <p>
+                        If you faced any issue, found outdated information, noticed a broken link, or want us to add a new topic, send us feedback. Your suggestions help us make the platform better for the next student.
+                    </p>
+
+                    <div class="feedback-card">
+                        <div>
+                            <h3>Share your feedback</h3>
+                            <p>
+                                Write your issue, suggestion, or improvement idea. If you leave your contact information in the form, we’ll try to reply as well.
+                            </p>
+                        </div>
+
+                        <a href="form_ka_link_add" target="_blank" rel="noopener noreferrer" class="feedback-btn">
+                            Open Feedback Form
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="support-thanks">
+                    <p>
+                        Whether you donate, send feedback, or simply share FAST Wiki with someone who needs it — thank you for supporting a student-built resource.
+                    </p>
+                </section>
+
+            </article>
+        </main>
+    </div>
+
+
+    <div class="jazzcash-modal-overlay" id="jazzCashModal">
+        <div class="jazzcash-modal">
+            <button type="button" class="jazzcash-modal__close" id="closeJazzCashModal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <h2>Donate via JazzCash</h2>
+
+            <p>
+                You can support FAST Wiki by sending a small contribution to either of these JazzCash numbers.
+            </p>
+
+            <div class="jazzcash-number-card">
+                <div>
+                    <h3>Ahmed Akhtar</h3>
+                    <p id="ahmedJazzCash">0328-3998922</p>
+                </div>
+
+                <button type="button" onclick="copyJazzCashNumber('ahmedJazzCash', 'Ahmed')">
+                    Copy
+                    <i class="fa-solid fa-copy"></i>
+                </button>
+            </div>
+
+            <div class="jazzcash-number-card">
+                <div>
+                    <h3>Muhammad Talha Hamid</h3>
+                    <p id="talhaJazzCash">03XX-XXXXXXX</p>
+                </div>
+
+                <button type="button" onclick="copyJazzCashNumber('talhaJazzCash', 'Talha')">
+                    Copy
+                    <i class="fa-solid fa-copy"></i>
+                </button>
+            </div>
+
+            <small id="jazzCashCopyMessage"></small>
+        </div>
+    </div>    
+</body>
+</html>

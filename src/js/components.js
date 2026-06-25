@@ -311,6 +311,13 @@ const FAST_WIKI_SEARCH_INDEX = [
         description: "FAST terms like Ragra, sessionals, absolutes, FA, warning count, and more.",
         url: "/src/sections/help/glossary/glossary.html",
         keywords: ["glossary", "terms", "ragra", "sessionals", "absolutes", "fa", "warning count"]
+    },
+    {
+        title: "Support Us",
+        category: "Help & FAQs",
+        description: "Support FAST Wiki through JazzCash donation or send feedback through Google Forms.",
+        url: "/support.html",
+        keywords: ["support", "donate", "donation", "jazzcash", "feedback", "google form", "help us"]
     }
 ];
 
@@ -566,4 +573,68 @@ function escapeHTML(value) {
 
 function escapeAttribute(value) {
     return escapeHTML(value);
+}
+
+// for jazzcash popup
+document.addEventListener("DOMContentLoaded", () => {
+    initJazzCashModal();
+});
+
+function initJazzCashModal() {
+    const openButton = document.getElementById("openJazzCashModal");
+    const modal = document.getElementById("jazzCashModal");
+    const closeButton = document.getElementById("closeJazzCashModal");
+
+    if (!openButton || !modal || !closeButton) return;
+
+    openButton.addEventListener("click", () => {
+        modal.classList.add("show-jazzcash-modal");
+        document.body.style.overflow = "hidden";
+    });
+
+    closeButton.addEventListener("click", () => {
+        closeJazzCashModal();
+    });
+
+    modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+            closeJazzCashModal();
+        }
+    });
+
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && modal.classList.contains("show-jazzcash-modal")) {
+            closeJazzCashModal();
+        }
+    });
+}
+
+function closeJazzCashModal() {
+    const modal = document.getElementById("jazzCashModal");
+
+    if (!modal) return;
+
+    modal.classList.remove("show-jazzcash-modal");
+    document.body.style.overflow = "";
+}
+
+function copyJazzCashNumber(elementId, name) {
+    const numberElement = document.getElementById(elementId);
+    const messageElement = document.getElementById("jazzCashCopyMessage");
+
+    if (!numberElement || !messageElement) return;
+
+    const number = numberElement.textContent.trim();
+
+    navigator.clipboard.writeText(number)
+        .then(() => {
+            messageElement.textContent = `${name}'s JazzCash number copied!`;
+        })
+        .catch(() => {
+            messageElement.textContent = "Could not copy. Please copy manually.";
+        });
+
+    setTimeout(() => {
+        messageElement.textContent = "";
+    }, 2500);
 }
