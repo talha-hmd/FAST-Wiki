@@ -101,30 +101,56 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // This is to scroll to the hash target created by search.js
 function scrollToSearchHash() {
-    const hash = window.location.hash;
-    if (!hash || !hash.startsWith('#')) return;
+    const hash = window.location.hash; // grabs the hash value in the url (e.g. "#searchText")
+    if (!hash || !hash.startsWith('#')) 
+        return;
 
-    const targetText = decodeURIComponent(hash.substring(1)).toLowerCase();
-    const superCleanTarget = targetText.replace(/[^a-z0-9]/g, '');
+    // creating two forms of the input search to avoid any missed matches (targetText and superCleanTarget)
+    let targetText = decodeURIComponent(hash.substring(1)).toLowerCase(); // remove the #
+    
+    // Extract the match index if it exists in the hash url tracker string
+    let targetMatchIndex = 0;
+    if (targetText.includes('_match_')) {
+        const parts = targetText.split('_match_');
+        targetText = parts[0]; 
+        targetMatchIndex = Number(parts[1]) ?? 0;
+    }
 
-    // The brief delay ensures any same-page scrolling engine layout has updated
+    const superCleanTarget = targetText.replace(/[^a-z0-9]/gi, ''); // removes all non-alphanumeric
+
+    // The brief delay ensures webpage layout has updated
     setTimeout(() => {
+        // builds a single line of text that is easy to traverse thru
         const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
         let textNode;
         
+        // keep trck of which instance number we run down the page
+        let currentMatchCount = 0;
+        
         while (textNode = walker.nextNode()) {
             const nodeValueLower = textNode.nodeValue.toLowerCase();
-            const superCleanNode = nodeValueLower.replace(/[^a-z0-9]/g, '');
+            const superCleanNode = nodeValueLower.replace(/[^a-z0-9]/gi, '');
             
-            if (nodeValueLower.includes(targetText) || superCleanNode.includes(superCleanTarget)) {
-                const parentEl = textNode.parentElement;
+            const isMatch = nodeValueLower.includes(targetText) || superCleanNode.includes(superCleanTarget);
+            
+            if (isMatch) {
+                // Only run the scroll code block once our counter hits the clicked instance index
+                if (currentMatchCount === targetMatchIndex) {
+                    const parentNode = textNode.parentElement;
+                    parentNode.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    
+                    parentNode.style.backgroundColor = 'rgba(255, 235, 59, 0.35)';
+                    parentNode.style.transition = 'background-color 0.5s ease';
+
+                    // reset bg after 2s
+                    setTimeout(() => {
+                        parentNode.style.backgroundColor = '';
+                    }, 2000);
+                    break;
+                }
                 
-                parentEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                
-                parentEl.style.backgroundColor = 'rgba(255, 235, 59, 0.35)';
-                parentEl.style.transition = 'background-color 0.5s ease';
-                setTimeout(() => { parentEl.style.backgroundColor = ''; }, 2000);
-                break;
+                // increment counter and keep moving to next text block if matched a keyword but isn't the target index yet
+                currentMatchCount++;
             }
         }
     }, 150);
