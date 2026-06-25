@@ -96,10 +96,10 @@
                             </p>
                         </div>
 
-                        <a href="form_ka_link_add" target="_blank" rel="noopener noreferrer" class="feedback-btn">
-                            Open Feedback Form
+                        <button type="button" class="feedback-btn" id="openFeedbackModal">
+                            Write Feedback
                             <i class="fa-solid fa-paper-plane"></i>
-                        </a>
+                        </button>
                     </div>
                 </section>
 
@@ -152,6 +152,60 @@
 
             <small id="jazzCashCopyMessage"></small>
         </div>
-    </div>    
+    </div>   
+    
+    <!-- for pop up feedback -->
+     <div class="feedback-modal-overlay" id="feedbackModal">
+        <div class="feedback-modal">
+            <button type="button" class="feedback-modal__close" id="closeFeedbackModal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <h2>Send Feedback</h2>
+
+            <p>
+                Found an issue, outdated information, broken link, or have a suggestion?
+                Send it here and we’ll try to improve FAST Wiki.
+            </p>
+
+            <form id="feedbackForm" class="feedback-form">
+                <div class="feedback-form__group">
+                    <label for="feedbackName">Name</label>
+                    <input type="text" id="feedbackName" name="name" placeholder="Your name">
+                </div>
+
+                <div class="feedback-form__group">
+                    <label for="feedbackContact">Contact / Email / WhatsApp</label>
+                    <input type="text" id="feedbackContact" name="contact" placeholder="Optional">
+                </div>
+
+                <div class="feedback-form__group">
+                    <label for="feedbackType">Feedback Type</label>
+                    <select id="feedbackType" name="type" required>
+                        <option value="Issue / Bug">Issue / Bug</option>
+                        <option value="Wrong or outdated information">Wrong or outdated information</option>
+                        <option value="Suggestion">Suggestion</option>
+                        <option value="New topic request">New topic request</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="feedback-form__group">
+                    <label for="feedbackMessage">Your Feedback</label>
+                    <textarea id="feedbackMessage" name="message" rows="5" placeholder="Write your feedback here..." required></textarea>
+                </div>
+
+                <!-- Hidden anti-spam field. Normal users will not see this. -->
+                <input type="text" id="feedbackWebsite" name="website" tabindex="-1" autocomplete="off">
+
+                <button type="submit" class="feedback-submit-btn" id="feedbackSubmitBtn">
+                    Submit Feedback
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+
+                <p class="feedback-status" id="feedbackStatus"></p>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

@@ -638,3 +638,131 @@ function copyJazzCashNumber(elementId, name) {
         messageElement.textContent = "";
     }, 2500);
 }
+
+// for feedback
+
+const FEEDBACK_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzFicjWwfkRfcT2DqD9bk5S_xugfmBNPgmk1tGPj80KweFopfAuUCPDi4yHONB_U7HD/exec";
+
+document.addEventListener("DOMContentLoaded", () => {
+    initFeedbackModal();
+});
+
+function initFeedbackModal() {
+    const openButton = document.getElementById("openFeedbackModal");
+    const modal = document.getElementById("feedbackModal");
+    const closeButton = document.getElementById("closeFeedbackModal");
+    const feedbackForm = document.getElementById("feedbackForm");
+
+    if (!openButton || !modal || !closeButton || !feedbackForm) return;
+
+    openButton.addEventListener("click", () => {
+        openFeedbackModal();
+    });
+
+    closeButton.addEventListener("click", () => {
+        closeFeedbackModal();
+    });
+
+    modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+            closeFeedbackModal();
+        }
+    });
+
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && modal.classList.contains("show-feedback-modal")) {
+            closeFeedbackModal();
+        }
+    });
+
+    feedbackForm.addEventListener("submit", submitFeedbackForm);
+}
+
+function openFeedbackModal() {
+    const modal = document.getElementById("feedbackModal");
+    const status = document.getElementById("feedbackStatus");
+
+    if (!modal) return;
+
+    modal.classList.add("show-feedback-modal");
+    document.body.style.overflow = "hidden";
+
+    if (status) {
+        status.textContent = "";
+        status.className = "feedback-status";
+    }
+
+    setTimeout(() => {
+        const messageInput = document.getElementById("feedbackMessage");
+        if (messageInput) messageInput.focus();
+    }, 100);
+}
+
+function closeFeedbackModal() {
+    const modal = document.getElementById("feedbackModal");
+
+    if (!modal) return;
+
+    modal.classList.remove("show-feedback-modal");
+    document.body.style.overflow = "";
+}
+
+function submitFeedbackForm(e) {
+    e.preventDefault();
+
+    const submitButton = document.getElementById("feedbackSubmitBtn");
+    const status = document.getElementById("feedbackStatus");
+
+    const name = document.getElementById("feedbackName").value.trim();
+    const contact = document.getElementById("feedbackContact").value.trim();
+    const type = document.getElementById("feedbackType").value;
+    const message = document.getElementById("feedbackMessage").value.trim();
+    const website = document.getElementById("feedbackWebsite").value.trim();
+
+    if (!message) {
+        status.textContent = "Please write your feedback before submitting.";
+        status.className = "feedback-status error";
+        return;
+    }
+
+    const feedbackData = {
+        name,
+        contact,
+        type,
+        message,
+        website
+    };
+
+    submitButton.disabled = true;
+    submitButton.innerHTML = `Submitting... <i class="fa-solid fa-spinner fa-spin"></i>`;
+
+    status.textContent = "";
+    status.className = "feedback-status";
+
+    fetch(FEEDBACK_SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+            "Content-Type": "text/plain;charset=utf-8"
+        },
+        body: JSON.stringify(feedbackData)
+    })
+    .then(() => {
+        status.textContent = "Feedback submitted successfully. Thank you!";
+        status.className = "feedback-status success";
+
+        feedbackForm.reset();
+
+        setTimeout(() => {
+            closeFeedbackModal();
+        }, 1800);
+    })
+    .catch(() => {
+        status.textContent = "Something went wrong. Please try again.";
+        status.className = "feedback-status error";
+    })
+    .finally(() => {
+        submitButton.disabled = false;
+        submitButton.innerHTML = `Submit Feedback <i class="fa-solid fa-arrow-right-long"></i>`;
+    });
+}
