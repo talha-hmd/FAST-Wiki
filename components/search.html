@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Overlay Mockup</title>
+    <!-- FontAwesome for the search icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Your /src/css/search.css -->
+    <link rel="stylesheet" href="/src/css/search.css">
+</head>
+<body>
+
+    <!-- Blurry, translucent fullscreen backdrop overlay -->
+    <div class="searchbar-overlay">
+        
+        <!-- Searchbox Input Component Row -->
+        <div class="searchbar-container">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search anything here..." autofocus>
+        </div>
+
+        <!-- The Consolidated Results Wrapper -->
+        <div class="results-container">
+
+            <!-- Result Box 1: Navigates to admissions/overview page when clicked anywhere -->
+            <a href="src/sections/admissions/overview/overview.html" class="result-box">
+                <h3>Admissions Overview & Eligibility</h3>
+                <p>
+                    <!-- Deep text anchor jumping to specific header element ids -->
+                    <span href="src/sections/admissions/overview/overview.html#who-can-apply">
+                        ...A minimum intermediate / FSc / ICS percentage (or O/A-Level equivalence via IBCC) is required...
+                    </span>
+                </p>
+                <p>
+                    <span href="src/sections/admissions/overview/overview.html#who-can-apply">
+                        ...O/A-Level candidates must obtain IBCC equivalence before their academic record can be scored...
+                    </span>
+                </p>
+            </a>
+
+            <!-- Result Box 2: Navigates to academics/ragra page -->
+            <a href="src/sections/academics/ragra/ragra.html" class="result-box">
+                <h3>The Ragra: What It Is & How to Survive It</h3>
+                <p>
+                    <span href="src/sections/academics/ragra/ragra.html#what-ragra-means">
+                        ...Urdu for grind/press — the term FAST students use for the sustained, high-frequency academic pressure...
+                    </span>
+                </p>
+            </a>
+
+            <!-- Fallback Empty State Preview Box (Uncomment below to test layout alignment) -->
+            <!-- 
+            <div class="no-results-box">
+                <p class="no-results-text">No Results Found</p>
+            </div> 
+            -->
+
+        </div>
+
+    </div>
+
+</body>
+</html>

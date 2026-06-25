@@ -1,0 +1,140 @@
+/* Import Google Fonts directly into the stylesheet */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;700&display=swap');
+
+/* The blur background */
+.searchbar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(43, 37, 37, 0.6); 
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 9999;
+    
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 10vh;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif; 
+}
+
+/* Main Search Bar Input Row */
+.searchbar-container {
+    background-color: #CECECC;
+    width: 90%;
+    max-width: 650px;
+    padding: 16px 20px;
+    border-radius: 0; 
+    display: flex;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+
+/* The Magnifying Glass Icon */
+.searchbar-container i {
+    color: #2B2525;
+    font-size: 1.2rem;
+    margin-right: 15px;
+}
+
+/* Place where u search stuff */
+.searchbar-container input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    color: #2B2525;
+    font-family: 'Outfit', sans-serif;
+}
+
+.searchbar-container input::placeholder {
+    color: rgba(43, 37, 37, 0.6);
+}
+
+/* The Singular Results Container For All Matches */
+.results-container {
+    background-color: #CECECC;
+    width: 90%;
+    max-width: 650px;
+    border-radius: 0 ;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    max-height: 60vh; 
+    border-top: 1px solid rgba(43, 37, 37, 0.15); 
+    
+    overflow-y: auto;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+}
+
+.results-container::-webkit-scrollbar {
+    display: none;
+}
+
+.result-box {
+    display: block;
+    padding: 0.9rem;
+    border-bottom: 1px solid rgba(43, 37, 37, 0.15); /* Separates individual page listings */
+    background-color: #CECECC;
+    box-sizing: border-box;
+}
+
+/* The title link for each page listing */
+.result-title-link {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.result-box h3 {
+    color: black;
+    margin: 0 0 12px 0;
+    font-family: 'Instrument Serif', serif;
+    font-size: 1.35rem;
+    font-weight: 500;
+}
+
+.result-title-link:hover h3 {
+    text-decoration: underline;
+}
+
+.result-box p {
+    margin: 10px 0;
+    padding-left: 10px;
+    border-left: 2px solid rgba(43, 37, 37, 0.3);
+    box-sizing: border-box;
+}
+
+.result-snippet-link {
+    text-decoration: none;
+    line-height: 1.5;
+    display: inline-block;
+    color: rgba(43, 37, 37, 0.85);
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.result-snippet-link:hover {
+    text-decoration: underline;
+    color: #2B2525; 
+}
+
+.result-snippet-link:active {
+    color: #000;
+}
+
+.no-results-text {
+    text-align: center;
+    color: rgba(43, 37, 37, 0.6);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    padding: 30px 20px;
+    margin: 0;
+}

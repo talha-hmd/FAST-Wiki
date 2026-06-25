@@ -20,7 +20,7 @@ The Admissions macro-section answers the first question every applicant asks: <e
 
 ## Sub-Section 1.1 — Admissions Overview & Eligibility
 
-<strong>URL:</strong> `/admissions/overview` · <strong>Title:</strong> FAST Admissions: Eligibility, Streams & How to Apply
+<strong>"URL":</strong> `/admissions/overview` · <strong>"Title":</strong> FAST Admissions: Eligibility, Streams & How to Apply
 
 ### Headings
 
@@ -54,7 +54,7 @@ The Admissions macro-section answers the first question every applicant asks: <e
 
 ## Sub-Section 1.2 — How to Apply: Step by Step
 
-<strong>URL:</strong> `/admissions/how-to-apply` · <strong>Title:</strong> How to Apply to FAST NUCES — Application Walkthrough
+<strong>"URL":</strong> `/admissions/how-to-apply` · <strong>"Title":</strong> How to Apply to FAST NUCES — Application Walkthrough
 
 ### Headings
 
@@ -94,7 +94,7 @@ The Admissions macro-section answers the first question every applicant asks: <e
 
 ## Sub-Section 1.3 — NU Test vs SAT vs NAT: Which Stream to Choose
 
-<strong>URL:</strong> `/admissions/streams` · <strong>Title:</strong> NU Test vs SAT vs NAT for FAST — Which Stream Should You Choose
+<strong>"URL":</strong> `/admissions/streams` · <strong>"Title":</strong> NU Test vs SAT vs NAT for FAST — Which Stream Should You Choose
 
 ### Headings
 
@@ -125,7 +125,7 @@ The Admissions macro-section answers the first question every applicant asks: <e
 
 ## Sub-Section 1.4 — The NU Test: Pattern, Sections & Strategy
 
-<strong>URL:</strong> `/admissions/nu-test` · <strong>Title:</strong> The FAST NU Test — Sections, Weighting & How to Prep
+<strong>"URL":</strong> `/admissions/nu-test` · <strong>"Title":</strong> The FAST NU Test — Sections, Weighting & How to Prep
 
 ### Headings
 
@@ -158,7 +158,7 @@ The Admissions macro-section answers the first question every applicant asks: <e
 
 ## Sub-Section 1.5 — The SAT Stream & the Discontinued Subject Tests
 
-<strong>URL:</strong> `/admissions/sat-stream` · <strong>Title:</strong> FAST SAT Admissions — SAT-II Gone, SAT-I on a Separate List
+<strong>"URL":</strong> `/admissions/sat-stream` · <strong>"Title":</strong> FAST SAT Admissions — SAT-II Gone, SAT-I on a Separate List
 
 ### Headings
 
@@ -188,7 +188,7 @@ The Admissions macro-section answers the first question every applicant asks: <e
 
 ## Sub-Section 1.6 — Merit, Cutoffs & Why No One Can "Chance" You
 
-<strong>URL:</strong> `/admissions/merit` · <strong>Title:</strong> FAST Merit & Cutoffs — Why No One Can Predict Your Odds
+<strong>"URL":</strong> `/admissions/merit` · <strong>"Title":</strong> FAST Merit & Cutoffs — Why No One Can Predict Your Odds
 
 ### Headings
 
@@ -220,7 +220,7 @@ The Admissions macro-section answers the first question every applicant asks: <e
 
 ## Sub-Section 1.7 — FAST vs NUST vs GIKI vs LUMS: Comparative Landscape
 
-<strong>URL:</strong> `/admissions/comparison` · <strong>Title:</strong> FAST vs NUST vs GIKI vs LUMS — Fees, Merit & Outcomes
+<strong>"URL":</strong> `/admissions/comparison` · <strong>"Title":</strong> FAST vs NUST vs GIKI vs LUMS — Fees, Merit & Outcomes
 
 ### Headings
 
@@ -265,7 +265,7 @@ The Academics macro-section answers <em>"Will I survive, and how does the system
 
 ## Sub-Section 2.1 — The Academic Year & Semester Structure
 
-<strong>URL:</strong> `/academics/calendar` · <strong>Title:</strong> FAST Academic Year, Semesters & the Summer Term
+<strong>"URL":</strong> `/academics/calendar` · <strong>"Title":</strong> FAST Academic Year, Semesters & the Summer Term
 
 ### Headings
 
@@ -299,7 +299,7 @@ The Academics macro-section answers <em>"Will I survive, and how does the system
 
 ## Sub-Section 2.2 — Grading System: Grades, GPA & CGPA
 
-<strong>URL:</strong> `/academics/grading` · <strong>Title:</strong> FAST Grading — Letter Grades, GPA, CGPA & the Dean's List
+<strong>"URL":</strong> `/academics/grading` · <strong>"Title":</strong> FAST Grading — Letter Grades, GPA, CGPA & the Dean's List
 
 ### Headings
 
@@ -346,7 +346,7 @@ The Academics macro-section answers <em>"Will I survive, and how does the system
 
 ## Sub-Section 2.3 — The Ragra: What It Is & How to Survive It
 
-<strong>URL:</strong> `/academics/ragra` · <strong>Title:</strong> The Ragra — What FAST's Academic Pressure Actually Is
+<strong>"URL":</strong> `/academics/ragra` · <strong>"Title":</strong> The Ragra — What FAST's Academic Pressure Actually Is
 
 ### Headings
 
@@ -375,7 +375,7 @@ The Academics macro-section answers <em>"Will I survive, and how does the system
 
 ## Sub-Section 2.4 — The GPA Economy: What FAST Grading Does to Your Record
 
-<strong>URL:</strong> `/academics/gpa-economy` · <strong>Title:</strong> The GPA Economy — Why a 3.0 at FAST Costs More Than Elsewhere
+<strong>"URL":</strong> `/academics/gpa-economy` · <strong>"Title":</strong> The GPA Economy — Why a 3.0 at FAST Costs More Than Elsewhere
 
 ### Headings
 
@@ -406,7 +406,7 @@ The Academics macro-section answers <em>"Will I survive, and how does the system
 
 ## Sub-Section 2.5 — Attendance, Missed Exams & Academic Integrity
 
-<strong>URL:</strong> `/academics/rules-attendance` · <strong>Title:</strong> Attendance, Missed Exams & Academic Dishonesty at FAST
+<strong>"URL":</strong> `/academics/rules-attendance` · <strong>"Title":</strong> Attendance, Missed Exams & Academic Dishonesty at FAST
 
 ### Headings
 
@@ -440,7 +440,7 @@ The Academics macro-section answers <em>"Will I survive, and how does the system
 
 ## Sub-Section 2.6 — Course Registration, Add/Drop, Withdrawal & Repeats
 
-<strong>URL:</strong> `/academics/registration` · <strong>Title:</strong> Course Registration, Add/Drop, Withdrawal & Repeating Courses
+<strong>"URL":</strong> `/academics/registration` · <strong>"Title":</strong> Course Registration, Add/Drop, Withdrawal & Repeating Courses
 
 ### Headings
 
@@ -485,7 +485,7 @@ The Academics macro-section answers <em>"Will I survive, and how does the system
 
 ## Sub-Section 2.7 — Academic Warning, Probation & Closure of Admission
 
-<strong>URL:</strong> `/academics/warnings` · <strong>Title:</strong> Academic Warnings, Probation & When Admission Closes
+<strong>"URL":</strong> `/academics/warnings` · <strong>"Title":</strong> Academic Warnings, Probation & When Admission Closes
 
 ### Headings
 
@@ -528,7 +528,7 @@ The Academics macro-section answers <em>"Will I survive, and how does the system
 
 ## Sub-Section 2.8 — Failsafes: Course Repetition, Reviews, Transfers & Semester Freeze
 
-<strong>URL:</strong> `/academics/failsafes` · <strong>Title:</strong> FAST Academic Failsafes — Repeats, Transfers, Freeze & Reviews
+<strong>"URL":</strong> `/academics/failsafes` · <strong>"Title":</strong> FAST Academic Failsafes — Repeats, Transfers, Freeze & Reviews
 
 ### Headings
 
@@ -588,7 +588,7 @@ The Academics macro-section answers <em>"Will I survive, and how does the system
 
 ## Sub-Section 2.9 — Study Strategy: Front-Loading & the Resource Stack
 
-<strong>URL:</strong> `/academics/study-strategy` · <strong>Title:</strong> How to Study at FAST — Pre-Semester, Summer & Resource Stack
+<strong>"URL":</strong> `/academics/study-strategy` · <strong>"Title":</strong> How to Study at FAST — Pre-Semester, Summer & Resource Stack
 
 ### Headings
 
@@ -640,7 +640,7 @@ The Finances macro-section answers <em>"Can I afford it, and what happens if I c
 
 ## Sub-Section 3.1 — Fee Structure & What You Actually Pay
 
-<strong>URL:</strong> `/finances/fees` · <strong>Title:</strong> FAST Fee Structure — What You Actually Pay Per Semester
+<strong>"URL":</strong> `/finances/fees` · <strong>"Title":</strong> FAST Fee Structure — What You Actually Pay Per Semester
 
 ### Headings
 
@@ -675,7 +675,7 @@ The Finances macro-section answers <em>"Can I afford it, and what happens if I c
 
 ## Sub-Section 3.2 — Financial Assistance (FA): How It Works
 
-<strong>URL:</strong> `/finances/financial-assistance` · <strong>Title:</strong> FAST Financial Assistance — How FA Works & What It Really Costs
+<strong>"URL":</strong> `/finances/financial-assistance` · <strong>"Title":</strong> FAST Financial Assistance — How FA Works & What It Really Costs
 
 ### Headings
 
@@ -705,7 +705,7 @@ The Finances macro-section answers <em>"Can I afford it, and what happens if I c
 
 ## Sub-Section 3.3 — Scholarships: Honhaar, PEEF, OSAF, FANA & Ihsan Trust
 
-<strong>URL:</strong> `/finances/scholarships` · <strong>Title:</strong> FAST Scholarships — Honhaar, PEEF, OSAF, FANA & Ihsan Trust
+<strong>"URL":</strong> `/finances/scholarships` · <strong>"Title":</strong> FAST Scholarships — Honhaar, PEEF, OSAF, FANA & Ihsan Trust
 
 ### Headings
 
@@ -742,7 +742,7 @@ The Finances macro-section answers <em>"Can I afford it, and what happens if I c
 
 ## Sub-Section 3.4 — When You Cannot Afford FAST: FAST vs IST vs Public
 
-<strong>URL:</strong> `/finances/affordability` · <strong>Title:</strong> Can't Afford FAST? — FAST vs IST vs the Public Alternative
+<strong>"URL":</strong> `/finances/affordability` · <strong>"Title":</strong> Can't Afford FAST? — FAST vs IST vs the Public Alternative
 
 ### Headings
 
@@ -781,7 +781,7 @@ The Campus Life macro-section answers <em>"What is it actually like to study the
 
 ## Sub-Section 4.1 — Campus Culture, Social Life & Societies
 
-<strong>URL:</strong> `/campus-life/culture` · <strong>Title:</strong> FAST Campus Culture — Social Life, Societies & the Real Story
+<strong>"URL":</strong> `/campus-life/culture` · <strong>"Title":</strong> FAST Campus Culture — Social Life, Societies & the Real Story
 
 ### Headings
 
@@ -804,7 +804,7 @@ The Campus Life macro-section answers <em>"What is it actually like to study the
 
 ## Sub-Section 4.2 — The Gender-Dynamics Meme (Satire vs Reality)
 
-<strong>URL:</strong> `/campus-life/gender-norms` · <strong>Title:</strong> Gender Interaction at FAST — The Viral Meme vs Reality
+<strong>"URL":</strong> `/campus-life/gender-norms` · <strong>"Title":</strong> Gender Interaction at FAST — The Viral Meme vs Reality
 
 ### Headings
 
@@ -823,7 +823,7 @@ The Campus Life macro-section answers <em>"What is it actually like to study the
 
 ## Sub-Section 4.3 — The Teacher-Quality Lottery
 
-<strong>URL:</strong> `/campus-life/teachers` · <strong>Title:</strong> The Teacher-Quality Lottery at FAST — How to Handle It
+<strong>"URL":</strong> `/campus-life/teachers` · <strong>"Title":</strong> The Teacher-Quality Lottery at FAST — How to Handle It
 
 ### Headings
 
@@ -859,7 +859,7 @@ The Career macro-section answers <em>"What happens after I graduate?"</em> — t
 
 ## Sub-Section 5.1 — Local Employment: The FAST Tag Advantage
 
-<strong>URL:</strong> `/career/local-jobs` · <strong>Title:</strong> Local Tech Jobs — Why the FAST Tag Wins in Pakistan
+<strong>"URL":</strong> `/career/local-jobs` · <strong>"Title":</strong> Local Tech Jobs — Why the FAST Tag Wins in Pakistan
 
 ### Headings
 
@@ -884,7 +884,7 @@ The Career macro-section answers <em>"What happens after I graduate?"</em> — t
 
 ## Sub-Section 5.2 — Going Abroad for a Master's: The Long-Term Fork
 
-<strong>URL:</strong> `/career/abroad` · <strong>Title:</strong> Funded Master's Abroad from FAST — The Honest Fork
+<strong>"URL":</strong> `/career/abroad` · <strong>"Title":</strong> Funded Master's Abroad from FAST — The Honest Fork
 
 ### Headings
 
@@ -913,7 +913,7 @@ The Career macro-section answers <em>"What happens after I graduate?"</em> — t
 
 ## Sub-Section 5.3 — The Abroad Path: Tactics & Destinations
 
-<strong>URL:</strong> `/career/abroad-tactics` · <strong>Title:</strong> Going Abroad from FAST — Germany, Fulbright, Erasmus & Points-Based Routes
+<strong>"URL":</strong> `/career/abroad-tactics` · <strong>"Title":</strong> Going Abroad from FAST — Germany, Fulbright, Erasmus & Points-Based Routes
 
 ### Headings
 
@@ -944,7 +944,7 @@ The Career macro-section answers <em>"What happens after I graduate?"</em> — t
 
 ## Sub-Section 5.4 — FAANG, Cybersecurity & Specialisation Paths
 
-<strong>URL:</strong> `/career/specialisations` · <strong>Title:</strong> FAANG, Cybersecurity & Specialisation — Niche Paths from FAST
+<strong>"URL":</strong> `/career/specialisations` · <strong>"Title":</strong> FAANG, Cybersecurity & Specialisation — Niche Paths from FAST
 
 ### Headings
 
@@ -973,7 +973,7 @@ A short, high-traffic macro-section that catches the most-searched single questi
 
 ## Sub-Section 6.1 — Frequently Asked Questions
 
-<strong>URL:</strong> `/help/faq` · <strong>Title:</strong> FAST Admissions & Academics — Frequently Asked Questions
+<strong>"URL":</strong> `/help/faq` · <strong>"Title":</strong> FAST Admissions & Academics — Frequently Asked Questions
 
 ### Headings (each a self-contained Q&A — perfect for FAQ rich results)
 
@@ -1021,7 +1021,7 @@ Six years per HEC guidelines (extendable one more year with Statutory Bodies' ap
 
 ## Sub-Section 6.2 — Glossary of FAST Terms
 
-<strong>URL:</strong> `/help/glossary` · <strong>Title:</strong> FAST Glossary — Ragra, Sessionals, Absolutes, FA & More
+<strong>"URL":</strong> `/help/glossary` · <strong>"Title":</strong> FAST Glossary — Ragra, Sessionals, Absolutes, FA & More
 
 ### Headings
 

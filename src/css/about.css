@@ -18,8 +18,7 @@
     width: 45%;
     max-width: 370;
     max-height: 370px;
-    aspect-ratio: 1 / 1;
-    height: auto;
+    height: 100%;
 
     object-fit: cover;
     border-radius: 16px;
