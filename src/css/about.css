@@ -16,11 +16,12 @@
 
 .founder-image {
     width: 45%;
-    max-width: 370;
-    max-height: 370px;
-    height: 100%;
-
-    object-fit: cover;
+    max-width: 370px; 
+    
+    height: auto; 
+    align-self: stretch; 
+    
+    object-fit: cover; /* picture content goes to clip edge-to-edge */
     border-radius: 16px;
     flex-shrink: 0; 
 }
@@ -29,6 +30,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    flex: 1;
 }
 
 .article__section .founder-info__heading {
@@ -97,9 +99,39 @@
     transform: scale(0.95);
 }
 
-@media (max-width: 768px) {
-    .article__section-founder-container {
+@media (max-width: 700px) {
+    .founder-container {
         flex-direction: column;
+        align-items: center; 
         text-align: center;
+        gap: 1.5rem;
+        padding: 1rem; 
+    }
+
+    .founder-image {
+        width: 100%; /* Spans the full card width on phone */
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 5; 
+        object-fit: cover;
+    }
+    
+    .founder-info__socials {
+        justify-content: center; /* Center balances social icons on small screens */
+        margin-top: 1.5rem; 
+    }
+}
+
+/* Custom formatting adjustment for extra narrow mobile screens */
+@media (max-width: 450px) {
+    .founder-image {
+        object-position: center center; 
+        margin: 0 auto;  /* in-case for centering the image */ 
+        align-self: center; 
+    }
+    
+    .founder-container {
+        padding: 1rem 0.5rem;
+        gap: 1rem;
     }
 }

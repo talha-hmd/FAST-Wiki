@@ -20,37 +20,68 @@ gtag('config', 'G-WHR8RHR86W');
 
 // This is to inject navbar and sidebar upon injection
 document.addEventListener("DOMContentLoaded", () => {
-    navbarContainer = document.getElementById('navbar-container');
+    const navbarContainer = document.getElementById('navbar-container');
+    const sidebarContainer = document.getElementById('sidebar-container');
 
     fetch('/components/navbar.html')
         .then(response => {
             if (response.ok) {
-                return response.text(); // this'll be the html string we use in the next '.then'
+                return response.text(); 
             }
         })
-        .then(html => {
-            navbarContainer.innerHTML = html;
-        }).catch(error => {
-            console.error('Error fetching navbar:', error);
-    });
+        .then(navbarHtml => {
+            if (navbarContainer) {
+                navbarContainer.innerHTML = navbarHtml;
+            }
 
-    sidebarContainer = document.getElementById('sidebar-container');
-
-    fetch('/components/sidebar.html')
+            // Now that the navbar is 100% rendered on the DOM, fetch the sidebar to avoid async issues
+            return fetch('/components/sidebar.html');
+        })
         .then(response => {
-            if (response.ok) {
-                return response.text(); // this'll be the html string we use in the next '.then'
+            if (response && response.ok) {
+                return response.text(); // response is the sidebar HTML
             }
         })
-        .then(html => {
-            sidebarContainer.innerHTML = html;
+        .then(sidebarHtml => {
+            if (sidebarContainer && sidebarHtml) {
+                sidebarContainer.innerHTML = sidebarHtml;
 
-            const sidebarButton = document.querySelector('.navbar-container__menu-button');
-            const sidebar = document.getElementById('sidebar-container');
+                const sidebarButton = document.querySelector('.navbar-container__menu-button');
 
-            if (sidebarButton && sidebar) {
-                sidebarButton.addEventListener('click', () => {
-                    sidebar.classList.toggle('sidebar-closed');
+                if (sidebarButton) {
+                    sidebarButton.addEventListener('click', () => {
+                        sidebarContainer.classList.toggle('sidebar-closed');
+                        
+                        const icon = sidebarButton.querySelector('.fa-solid');
+                        if (icon) {
+                            if (icon.classList.contains('fa-bars')) {
+                                icon.classList.remove('fa-bars');
+                                icon.classList.add('fa-xmark');
+                            } else {
+                                icon.classList.remove('fa-xmark');
+                                icon.classList.add('fa-bars');
+                            }
+                        }
+                    });
+                }
+
+                // if any sidebar link is clicked, then close the sidebar
+                const sidebarLinks = sidebarContainer.querySelectorAll('a');
+        
+                sidebarLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        // 1. Force the sidebar to slide closed by adding the closed class
+                        sidebarContainer.classList.add('sidebar-closed');
+                        
+                        // 2. Reset the navbar menu button icon back to the hamburger bars
+                        if (sidebarButton) {
+                            const icon = sidebarButton.querySelector('.fa-solid');
+                            if (icon) {
+                                icon.classList.remove('fa-xmark');
+                                icon.classList.add('fa-bars');
+                            }
+                        }
+                    });
                 });
             }
 
@@ -58,9 +89,10 @@ document.addEventListener("DOMContentLoaded", () => {
             if (typeof initDynamicSearch === "function") {
                 initDynamicSearch();
             }
-        }).catch(error => {
-            console.error('Error fetching sidebar:', error);
-    });
+        })
+        .catch(error => {
+            console.error('Error fetching navigation components:', error);
+        });
 
     fetch('/components/linkedinCard.html')
     .then(response => {
