@@ -83,13 +83,4 @@
     transition: 0.15s ease;
 }
 
-
-@media screen and (max-width: 660px) {
-    .navbar-container__logo {
-        font-size: 2.3rem;
-    }
-
-    .navbar-container__menu .fa-bars {
-        font-size: 1.8rem;
-    }
-}
+/* NOTE: navbar responsive rules live in responsive.css. */

@@ -1,3 +1,17 @@
+// ============================================================================
+// components.js — shared behavior loaded on every page (via <script defer>).
+// Loaded alongside search.js. Sections, in order:
+//   1. Analytics init           (GA4 + Microsoft Clarity)
+//   2. Nav injection            (fetch + mount navbar/sidebar, wire toggles)
+//   3. Search hash scroll       (scroll-to-match from search.js result links)
+//   4. JazzCash donation modal  (support.html; copyJazzCashNumber is global
+//                                because support.html calls it via onclick)
+//   5. Feedback modal           (support.html; posts to Google Apps Script)
+//   6. Floating feedback button (injected on every page)
+// NOTE: copyJazzCashNumber must stay a top-level global (inline onclick in
+// support.html). Everything else could be IIFE-scoped if you refactor later.
+// ============================================================================
+
 // This stuff executes automatically on page load
 
 // Google Analytics (GA4) Initialization code

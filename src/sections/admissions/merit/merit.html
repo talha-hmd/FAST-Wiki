@@ -16,22 +16,16 @@
     <link rel="stylesheet" href="/src/css/search.css">
     <link rel="stylesheet" href="/src/css/responsive.css">
 
-    
-<script src="/src/js/search.js" defer></script>
+    <script src="/src/js/search.js" defer></script>
     <script src="/src/js/components.js" defer></script>
 
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:image" content="https://fast-wikipedia.vercel.app/preview_img.png">
-    <meta name="twitter:image" content="https://fast-wikipedia.vercel.app/preview_img.png">
-
-    <title>FAST Merit & Cutoffs — Why No One Can Predict Your Odds | FAST Wiki</title>
+    <title>FAST NU Merit Calculator: How to Predict Your Closing Aggregate | FAST Wiki</title>
     <meta name="description" content="Learn how FAST evaluates selection status instead of publishing open rankings. Find out how to safely estimate your chances and use the safety-buffer rules.">
     <meta name="keywords" content="FAST merit lists, closing aggregates, select status, cutoff dynamics, seat changes, admission estimation">
     <meta property="og:url" content="https://fast-wikipedia.vercel.app/admissions/merit">
-    <meta property="og:title" content="FAST Merit & Cutoffs — Why No One Can Predict Your Odds | FAST Wiki">
+    <meta property="og:title" content="FAST NU Merit Calculator: How to Predict Your Closing Aggregate | FAST Wiki">
     <meta property="og:description" content="Learn how FAST evaluates selection status instead of publishing open rankings. Find out how to safely estimate your chances and use the safety-buffer rules.">
-    <meta name="twitter:title" content="FAST Merit & Cutoffs — Why No One Can Predict Your Odds | FAST Wiki">
+    <meta name="twitter:title" content="FAST NU Merit Calculator: How to Predict Your Closing Aggregate | FAST Wiki">
     <meta name="twitter:description" content="Learn how FAST evaluates selection status instead of publishing open rankings. Find out how to safely estimate your chances and use the safety-buffer rules.">
 </head>
 
@@ -59,7 +53,7 @@
                     <p class="article__intro">
                         FAST merit is one of the most confusing parts of the admission process because students keep asking 
                         “Can I get in with this aggregate?” The honest answer is that no one can predict it perfectly. 
-                        You can only estimate your chances using previous data, your campus/program target, and a safe buffer.
+                        Once the test timeline concludes, the numbers are locked—no amount of emailing the Rector or university administration will change your status. You can only estimate your chances using past data thresholds.
                     </p>
                 </header>
 
@@ -67,74 +61,152 @@
                     <h2>FAST Does Not Publish a Ranked Merit List</h2>
 
                     <p>
-                        FAST completely avoids publishing a simple ranked list containing raw student placements or absolute positions. Instead, the institution updates its system by releasing a <strong>Selected / Eligible / Denied</strong> status chart matching every distinct campus-and-program intersection.
+                        FAST completely avoids publishing a simple ranked list containing raw student placements, names, or absolute positions. Instead, the institution updates its portal system by releasing an individual selection matrix matching your specific campus and discipline preference list.
                     </p>
-
-                    <p>
-                        Consequently, every single "closing merit" number floating online is completely unofficial. These figures are reconstructed by the community from self-reported outcomes, student screenshots, and communal spreadsheets—treat them strictly as an approximate estimate, not as hard fact.
-                    </p>
-
-                    <div class="article-card-grid">
-                        <div class="article-card">
-                            <h3>Selected</h3>
-                            <p>
-                                Your aggregate successfully cleared the cutoff boundary condition for that campus/program option.
-                            </p>
-                        </div>
-
-                        <div class="article-card">
-                            <h3>Eligible</h3>
-                            <p>
-                                You met the criteria for a lower preference choice and remain bound to that selection pending seat availability.
-                            </p>
-                        </div>
-
-                        <div class="article-card">
-                            <h3>Denied</h3>
-                            <p>
-                                Your computed aggregate score sat entirely below the minimum closing requirement for that specific cycle.
-                            </p>
-                        </div>
-                    </div>
 
                     <div class="article-note">
-                        <strong>Important:</strong>
-                        Treat online closing merit numbers as estimates, not official proof. They are useful for planning, but they are not guaranteed.
+                        <strong>Unofficial Numbers:</strong>
+                        Every "closing merit" figure floating online is reconstructed by the community from self-reported outcomes, student screenshots, and communal spreadsheets — treat them as approximate estimates, not as hard fact.
+                    </div>
+
+                    <h3>Understanding Your Portal Selection Status</h3>
+                    <p>
+                        When the official <strong>Merit List goes live on July 22, 2026</strong>, your student dashboard will show one of three specific assignments:
+                    </p>
+
+                    <div class="article-table-wrapper">
+                        <table class="article-table">
+                            <thead>
+                                <tr>
+                                    <th>Portal Status</th>
+                                    <th>Official Meaning</th>
+                                    <th>Action Required</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Selected</strong></td>
+                                    <td>Your final composite aggregate successfully cleared the cutoff boundary line for your highest preferred campus or program option.</td>
+                                    <td>Download your fee challan immediately and submit dues before the deadline to freeze your seat.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Eligible</strong></td>
+                                    <td>You missed the cutoff for your primary choice, but cleared the requirements for a lower preference program listed on your application.</td>
+                                    <td>You can pay the fee to lock this alternative seat, or see if your primary choice drops its requirement in later iterations.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Denied / Waiting</strong></td>
+                                    <td>Your computed aggregate score sat entirely below the minimum closing requirement for your selected choices during this specific cycle.</td>
+                                    <td>Immediately activate your secondary backup university options. Do not wait passively.</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </section>
 
                 <section class="article__section">
-                    <h2>How to Estimate Your Own Chances</h2>
+                    <h2>FAST NU Merit Calculator: How to Predict Your Closing Aggregate</h2>
 
                     <p>
-                        Because FAST merit is highly localized and depends entirely on the unique demand of each campus-and-program combination, you should follow a systematic estimation model rather than comparing unrelated data points:
+                        For FSc and A-Level applicants, the term <strong>"Aggregate"</strong> simply means your total composite score calculated out of 100, combining your academic background marks and your entrance test results. This number is determined through strict, official formulas:
+                    </p>
+
+                    <h3 style="margin-top: 15px;">Official Computing Merit Split (CS, SE, AI, DS, Cyber)</h3>
+                    <ul class="article-list">
+                        <li><strong>50% Weightage:</strong> Admission Entrance Test Score</li>
+                        <li><strong>40% Weightage:</strong> HSSC (FSc / Intermediate Part-1 or combined records) / A-Level Equivalent</li>
+                        <li><strong>10% Weightage:</strong> SSC (Matric / O-Level Equivalent)</li>
+                    </ul>
+
+                    <h3 style="margin-top: 15px;">Official Engineering Merit Split (EE, CE)</h3>
+                    <ul class="article-list">
+                        <li><strong>33% Weightage:</strong> Admission Entrance Test Score</li>
+                        <li><strong>50% Weightage:</strong> HSSC (FSc / Intermediate) / A-Level Equivalent</li>
+                        <li><strong>17% Weightage:</strong> SSC (Matric) / O-Level Equivalent</li>
+                    </ul>
+
+                    <h3 style="margin-top: 25px;">How to Estimate Your Selection Odds</h3>
+                    <p>
+                        Because FAST merit is highly localized and depends entirely on the unique demand of each campus-and-program combination, you should follow this systematic model:
                     </p>
 
                     <div class="timeline">
                         <div class="timeline__item">
                             <span>1</span>
-                            <p>Pull 2–3 years of unofficial merit lists from circulating community folders and aggregate calculators.</p>
+                            <p><strong>Pull</strong> 2–3 years of unofficial merit histories from circulating community archives or student aggregate tool logs.</p>
                         </div>
 
                         <div class="timeline__item">
                             <span>2</span>
-                            <p>Isolate the specific closing aggregate required for your target campus-and-program combination.</p>
+                            <p><strong>Isolate</strong> the specific closing aggregate required for your preferred campus-and-degree combination.</p>
                         </div>
 
                         <div class="timeline__item">
                             <span>3</span>
-                            <p>Add <strong>+2–3% onto that baseline as a worst-case buffer</strong> to account for annual aggregate shifts.</p>
+                            <p><strong>Add a +2–3% safe buffer</strong> onto that baseline score to properly account for annual population or exam difficulty shifts.</p>
                         </div>
 
                         <div class="timeline__item">
                             <span>4</span>
-                            <p>Compare your actual computed aggregate directly against that buffered target score.</p>
+                            <p><strong>Compare</strong> your actual computed aggregate directly against that buffered target milestone.</p>
                         </div>
 
                         <div class="timeline__item">
                             <span>5</span>
-                            <p>Clearing it means you are plausibly safe (never certain); sitting below it means you must <strong>apply to a backup university immediately.</strong></p>
+                            <p><strong>Secure a backup track</strong> immediately if your aggregate score sits within 1-2% or below previous closings. Do not wait for a "second list" to clear—for highly demanded tracks like CS and SE, second lists rarely drop more than a fraction of a percent.</p>
                         </div>
+                    </div>
+                </section>
+
+                <section class="article__section">
+                    <h2>Official Discipline Preference Selection Grid Format</h2>
+                    <p>
+                        As shown on the official FAST portal results engine, your final eligibility matrix is mapped out in a specific discipline grid across campuses. Below is an overview of how your results screen displays campus allocations across concurrent programs:
+                    </p>
+
+                    <div class="article-table-wrapper">
+                        <table class="article-table">
+                            <thead>
+                                <tr>
+                                    <th>Campus Location</th>
+                                    <th>BS (CS)</th>
+                                    <th>BS (SE)</th>
+                                    <th>BS (AI)</th>
+                                    <th>BS (DS)</th>
+                                    <th>BS (CY)</th>
+                                    <th>BS (EE)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Lahore</strong></td>
+                                    <td>Selected</td>
+                                    <td>Selected</td>
+                                    <td>Eligible</td>
+                                    <td>Eligible</td>
+                                    <td>—</td>
+                                    <td>Eligible</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Islamabad</strong></td>
+                                    <td>Selected</td>
+                                    <td>Selected</td>
+                                    <td>Selected</td>
+                                    <td>Eligible</td>
+                                    <td>Selected</td>
+                                    <td>Eligible</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Karachi</strong></td>
+                                    <td>Selected</td>
+                                    <td>Eligible</td>
+                                    <td>—</td>
+                                    <td>Eligible</td>
+                                    <td>Eligible</td>
+                                    <td>—</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </section>
 
@@ -149,53 +221,42 @@
                         <div class="article-card">
                             <h3>Seat Supply Shifts</h3>
                             <p>
-                                Launching a new campus, opening a new program (such as AI arriving at Lahore), or experiencing a surge in SAT-stream admissions relaxes the NU Test closing merit by expanding the pool.
+                                Launching a new campus location or expanding seating limits for specialized tracks can lower the general closing aggregate requirements by distributing applicant pressure.
                             </p>
                         </div>
 
                         <div class="article-card">
                             <h3>National Passing Ratios</h3>
                             <p>
-                                A cycle featuring exceptionally low intermediate pass rates compresses the academic-record half of every applicant's aggregate, depressing closing merits the following year.
+                                A year with exceptionally low intermediate passing rates or tough board exams deflates the academic portion of aggregates across the board, pulling down overall merit cutoffs.
                             </p>
                         </div>
 
                         <div class="article-card">
-                            <h3>The NAT Variance</h3>
+                            <h3>The NAT Variance Error</h3>
                             <p>
-                                For the NAT stream specifically, the small size of the reserved seat pool causes violent aggregate swings—witnessing a +10% jump one cycle and a -8% drop the next.
+                                For the NTS NAT track specifically, relying on past metrics is dangerous. Student logs reveal brutal "horror stories" where NAT merit saw a sudden +10% jump one year followed by an -8% drop the next due to the thin seat pool.
                             </p>
                         </div>
                     </div>
                 </section>
 
                 <section class="article__section">
-                    <h2>The Mental Model</h2>
-
+                    <h2>The SAT Selection Nuance</h2>
                     <p>
-                        Your stress or anxiety will not alter the numerical outcomes of the cycle. The selection chart functions as a completely deterministic formula once the applicant pool is locked and fixed.
+                        If you are applying via the SAT stream, your application is evaluated on a completely isolated merit list with a higher closing threshold — historically an aggregate <strong>above 85%</strong> is needed to comfortably secure flagship CS or AI seats. See <a href="/src/sections/admissions/sat-test/sat-test.html">FAST SAT Admissions</a> for the full SAT cutoff breakdown.
                     </p>
-
-                    <p>
-                        The only productive and logical use of your post-exam waiting period is <strong>securing alternative options.</strong> Focus your energy on applying to reliable backups and adjusting to university refund timelines, instead of posting redundant "chance me" threads in online discussion forums.
-                    </p>
-
-                    <ul class="article-list">
-                        <li>If your aggregate is clearly above the safe range, you are probably in a good position.</li>
-                        <li>If your aggregate is near the previous closing merit, treat it as entirely uncertain.</li>
-                        <li>If your aggregate sits below the buffered calculation, do not wait blindly—execute a backup track immediately.</li>
-                    </ul>
                 </section>
 
                 <section class="article__section">
                     <h2>Quick Summary</h2>
 
                     <p>
-                        FAST does not publish a clean ranked merit list, so most closing merit numbers online are unofficial estimates. Use them carefully, but do not treat them as final truth.
+                        FAST does not publish a public ranked merit document, so most closing values online are unofficial reconstructions. Use them carefully, but do not treat them as absolute truth.
                     </p>
 
                     <p>
-                        The safest method is to check previous years, focus on your exact campus/program, add a 2 to 3 percent buffer, and keep backup universities ready.
+                        The safest strategy is to use the official formulas to calculate your aggregate, factor in a 2% to 3% safety buffer for your specific campus target, and keep a backup admission option ready to go as the July 22 deadline approaches.
                     </p>
                 </section>
 

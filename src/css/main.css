@@ -242,35 +242,5 @@ textarea {
     color: #ffffff;
 }
 
-@media (max-width: 768px) {
-    .docs-layout {
-        overflow-x: hidden;
-        width: 100%;
-    }
-
-    #sidebar-container {
-        position: fixed;
-        top: 60px; /* to align right beneath navbar */
-        left: 0;
-        
-        width: 100vw;
-        
-        height: calc(100dvh - 50px);
-        max-height: calc(100dvh - 50px);
-        
-        z-index: 9999;
-        background-color: #F0EFED;
-        padding: 1rem 1.5rem 2rem 1.5rem;
-        
-        overflow-y: auto; 
-        overflow-x: hidden;
-        
-        transition: transform 0.3s ease-in-out;
-    }
-
-    #sidebar-container.sidebar-closed {
-        transform: translateY(calc(-100% - 50px));
-        width: 100vw; 
-        border-right-color: transparent;
-    }
-}
+/* NOTE: all responsive (@media) rules live in responsive.css.
+   The mobile sidebar overlay + full-width phone behavior are defined there. */

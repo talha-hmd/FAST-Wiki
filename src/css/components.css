@@ -90,12 +90,21 @@
     color: #CECECC;
     padding: 1rem;
     margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     border-left: 4px solid black;
     line-height: 1.7;
 }
 
 .article-note strong {
     color: white;
+}
+
+/* Warning variant — used for critical-risk callouts (e.g. "GPA Abroad Trap",
+   "Disciplinary stakes"). Red left border + slightly warmer dark ground so
+   warnings read distinctly from regular tips without breaking the palette. */
+.article-note.article-note--warning {
+    border-left-color: #b3261e;
+    background-color: #2a1c1c;
 }
 
 .article-card-grid {
@@ -203,6 +212,7 @@
     border-collapse: collapse;
     font-family: 'Outfit', sans-serif;
     border: 1px solid black;
+    table-layout: auto; /* size columns to content, not equally */
 }
 
 .article-table th,
@@ -213,6 +223,10 @@
     vertical-align: top;
     font-size: 0.95rem;
     line-height: 1.6;
+    /* Override the .article-content `overflow-wrap: anywhere` cascade so
+       labels and terms don't break mid-word inside cells. */
+    overflow-wrap: normal;
+    word-break: keep-all;
 }
 
 .article-table th {
@@ -224,6 +238,26 @@
 .article-table td {
     background-color: transparent;
     color: #222;
+}
+
+/* First column holds short labels (grade codes, statuses, tier names).
+   Keep them on one line and give the column a floor so wide sibling
+   columns can't starve it into wrapping. The table grows to fit and
+   .article-table-wrapper provides horizontal scroll on narrow screens. */
+.article-table th:first-child,
+.article-table td:first-child {
+    white-space: nowrap;
+    min-width: 9rem;
+}
+
+/* Variant for tables whose first column is genuinely sentence-length
+   (e.g. affordability, failsafes, course-registration). Add the class
+   `article-table--wide-first` to the <table> so column 1 wraps cleanly
+   instead of being squashed. */
+.article-table.article-table--wide-first th:first-child,
+.article-table.article-table--wide-first td:first-child {
+    white-space: normal;
+    min-width: 16rem;
 }
 
 /* links decoration */
