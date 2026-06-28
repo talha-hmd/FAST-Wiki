@@ -1,0 +1,518 @@
+/*FAST Wiki Responsive Fixes*/
+
+/* Safety */
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    min-width: 0;
+}
+
+.docs-layout,
+.docs-layout__content,
+.article,
+.article-content,
+.support-page {
+    min-width: 0;
+}
+
+/* Make long words/links not break layout */
+.article-content,
+.article-content p,
+.article-content li,
+.sections-container__description,
+.support-page p {
+    overflow-wrap: anywhere;
+}
+
+/*Laptops / Smaller Desktop*/
+
+@media (max-width: 1200px) {
+    .docs-layout__content {
+        max-width: 1000px;
+        padding: 2.5rem 1.8rem;
+    }
+
+    #sidebar-container {
+        width: 220px;
+    }
+
+    .docs-layout__sections-container {
+        gap: 1.2rem;
+    }
+
+    .docs-layout__sections-container > li {
+        flex-basis: calc((100% - 2.4rem) / 3);
+    }
+}
+
+/* for less than 818px tablets or landscape phone */
+
+@media (max-width: 1024px) {
+    #navbar-container {
+        height: 60px;
+        padding: 0.3rem 1rem;
+    }
+
+    .navbar-container__logo {
+        font-size: clamp(2rem, 4vw, 2.7rem);
+    }
+
+    .navbar-container__links {
+        gap: 1.5rem;
+        font-size: 1.8rem;
+    }
+
+    .navbar-container__profile-link i {
+        font-size: 1.6rem;
+    }
+
+    /* Sidebar becomes overlay instead of pushing content */
+    #sidebar-container {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        z-index: 9999;
+
+        width: min(340px, 86vw);
+        height: calc(100dvh - 60px);
+        max-height: calc(100dvh - 60px);
+
+        padding: 1rem 1.2rem 2rem;
+        background-color: #F0EFED;
+        border-right: 1px solid black;
+
+        transform: translateX(0);
+        transition: transform 0.3s ease;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    #sidebar-container.sidebar-closed {
+        width: min(340px, 86vw);
+        padding: 1rem 1.2rem 2rem;
+        transform: translateX(-110%);
+        border-right: 1px solid black;
+    }
+
+    .docs-layout__content {
+        max-width: 900px;
+        padding: 2.2rem 1.5rem;
+    }
+
+    .docs-layout__content h1 {
+        font-size: clamp(2.1rem, 5vw, 3rem);
+        margin-bottom: 2.2rem;
+    }
+
+    /* Homepage cards: 2 columns on tablets */
+    .docs-layout__sections-container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.2rem;
+    }
+
+    .docs-layout__sections-container > li {
+        width: 100%;
+        min-width: 0;
+        flex: initial;
+    }
+
+    .docs-layout__sections-container h2 {
+        font-size: clamp(1.7rem, 3vw, 2rem);
+    }
+
+    .sections-container__description {
+        font-size: 0.95rem;
+        line-height: 1.65;
+    }
+
+    /* Article pages */
+    .article-content {
+        max-width: 850px;
+    }
+
+    .article__header h1 {
+        font-size: clamp(2.7rem, 7vw, 4.5rem);
+        line-height: 1.08;
+    }
+
+    .article__intro {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+    .article__section h2 {
+        font-size: clamp(2rem, 5vw, 2.8rem);
+    }
+
+    /* Article cards: 2 columns on tablets */
+    .article-card-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* Support page */
+    .support-page .article__header h1 {
+        font-size: clamp(2.7rem, 7vw, 4.5rem);
+    }
+
+    .support-card {
+        padding: 2rem;
+    }
+
+    .feedback-card {
+        align-items: flex-start;
+    }
+
+    /* Floating feedback should not cover too much content */
+    .floating-feedback-btn {
+        right: 1.2rem;
+        bottom: 1.2rem;
+    }
+}
+
+/* Phones */
+
+@media (max-width: 700px) {
+    .navbar-container__logo {
+        font-size: 2rem;
+    }
+
+    .navbar-container__menu .fa-bars,
+    .navbar-container__menu .fa-xmark {
+        font-size: 1.7rem;
+    }
+
+    .navbar-container__links {
+        gap: 1.1rem;
+        font-size: 1.55rem;
+    }
+
+    .navbar-container__profile-link i {
+        font-size: 1.45rem;
+    }
+
+    .docs-layout__content {
+        padding: 1.6rem 1rem;
+    }
+
+    .docs-layout__content h1 {
+        font-size: clamp(2rem, 10vw, 2.7rem);
+        line-height: 1.1;
+        margin-bottom: 1.8rem;
+    }
+
+    /* Homepage cards: 1 column on phones */
+    .docs-layout__sections-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .docs-layout__sections-container > li {
+        padding: 1rem;
+    }
+
+    .docs-layout__sections-container h2 {
+        font-size: 2rem;
+    }
+
+    .sections-container__description {
+        font-size: 0.95rem;
+        line-height: 1.65;
+    }
+
+    /* Article content */
+    .article-breadcrumb {
+        flex-wrap: wrap;
+        font-size: 0.85rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .article__header {
+        margin-bottom: 2rem;
+    }
+
+    .article__header h1 {
+        font-size: clamp(2.5rem, 13vw, 3.6rem);
+        line-height: 1.05;
+    }
+
+    .article__intro {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+    .article__section {
+        margin-bottom: 2.2rem;
+    }
+
+    .article__section h2 {
+        font-size: clamp(2rem, 9vw, 2.6rem);
+        line-height: 1.1;
+    }
+
+    .article__section h3 {
+        font-size: 1.45rem;
+    }
+
+    .article__section p {
+        font-size: 0.98rem;
+        line-height: 1.75;
+    }
+
+    .article-card-grid {
+        grid-template-columns: 1fr;
+        gap: 0.9rem;
+    }
+
+    .timeline__item {
+        gap: 0.75rem;
+    }
+
+    .timeline__item span {
+        width: 26px;
+        height: 26px;
+        font-size: 0.8rem;
+    }
+
+    /* Tables stay scrollable */
+    .article-table-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .article-table {
+        min-width: 650px;
+    }
+
+    .article-table th,
+    .article-table td {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    /* Support page */
+    .support-page .article__header {
+        margin-bottom: 2rem;
+    }
+
+    .support-page .article__header h1 {
+        font-size: clamp(2.5rem, 13vw, 3.5rem);
+    }
+
+    .support-page .article__header p,
+    .support-section p {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+    .support-section {
+        margin-top: 2.2rem;
+    }
+
+    .support-section h2,
+    .support-card h2 {
+        font-size: clamp(2rem, 9vw, 2.6rem);
+    }
+
+    .support-card {
+        margin-top: 2.2rem;
+        padding: 1.4rem;
+    }
+
+    .feedback-card {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.3rem;
+        padding: 1.3rem;
+    }
+
+    .support-btn,
+    .feedback-btn {
+        width: 100%;
+    }
+
+    .support-thanks {
+        padding: 1.2rem;
+    }
+}
+
+/*Small Phones*/
+
+@media (max-width: 430px) {
+    #navbar-container {
+        padding: 0.25rem 0.8rem;
+    }
+
+    .navbar-container__logo {
+        font-size: 1.8rem;
+    }
+
+    .navbar-container__links {
+        gap: 0.9rem;
+    }
+
+    .navbar-container__links .fa-linkedin-in,
+    .navbar-container__links .fa-whatsapp {
+        font-size: 1.35rem;
+    }
+
+    #sidebar-container,
+    #sidebar-container.sidebar-closed {
+        width: 88vw;
+        padding: 1rem 1rem 2rem;
+    }
+
+    .sidebar-container__title {
+        font-size: 2rem;
+    }
+
+    .sidebar-container__header h2,
+    #about-us-header h2,
+    #support-us-header h2 {
+        font-size: 1.15rem;
+    }
+
+    .sidebar-container__sub-links a {
+        font-size: 0.9rem;
+        padding: 0.18rem 0.6rem;
+    }
+
+    .docs-layout__content {
+        padding: 1.4rem 0.9rem;
+    }
+
+    .docs-layout__sections-container > li {
+        padding: 0.9rem;
+    }
+
+    .article__header h1 {
+        font-size: 2.6rem;
+    }
+
+    .article__section h2 {
+        font-size: 2.1rem;
+    }
+
+    .floating-feedback-btn {
+        right: 1rem;
+        bottom: 1rem;
+        padding: 0.8rem 0.9rem;
+    }
+
+    .floating-feedback-btn span {
+        display: none;
+    }
+
+    .floating-feedback-btn i {
+        font-size: 1.1rem;
+    }
+}
+
+/*Search Popup Responsive*/
+
+@media (max-width: 700px) {
+    .searchbar-overlay {
+        padding: 1rem;
+        padding-top: 5rem;
+        align-items: stretch;
+    }
+
+    .searchbar-container,
+    .results-container {
+        width: 100%;
+        max-width: none;
+    }
+
+    .searchbar-container {
+        padding: 0.9rem 1rem;
+    }
+
+    .searchbar-container input {
+        font-size: 1rem;
+    }
+
+    .results-container {
+        max-height: 65dvh;
+    }
+
+    .result-box h3 {
+        font-size: 1.25rem;
+    }
+
+    .result-snippet-link {
+        font-size: 0.82rem;
+    }
+}
+
+/* Modals Responsive */
+
+@media (max-width: 700px) {
+    .feedback-modal-overlay,
+    .jazzcash-modal-overlay {
+        padding: 1rem;
+        align-items: flex-start;
+        overflow-y: auto;
+    }
+
+    .feedback-modal,
+    .jazzcash-modal {
+        width: 100%;
+        max-height: calc(100dvh - 2rem);
+        padding: 1.4rem;
+    }
+
+    .feedback-modal h2,
+    .jazzcash-modal h2 {
+        font-size: 2.2rem;
+        padding-right: 2rem;
+    }
+
+    .feedback-submit-btn {
+        width: 100%;
+    }
+
+    .jazzcash-number-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .jazzcash-number-card button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+    .docs-layout__content {
+        padding-top: 1.4rem;
+        padding-bottom: 1.4rem;
+    }
+
+    .docs-layout__content h1 {
+        margin-bottom: 1.4rem;
+    }
+
+    .docs-layout__sections-container {
+        gap: 1rem;
+    }
+
+    .docs-layout__sections-container > li {
+        padding: 0.8rem;
+    }
+
+    .feedback-modal-overlay,
+    .jazzcash-modal-overlay,
+    .searchbar-overlay {
+        align-items: flex-start;
+        padding-top: 1rem;
+    }
+
+    .feedback-modal,
+    .jazzcash-modal {
+        max-height: calc(100dvh - 2rem);
+    }
+}

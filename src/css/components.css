@@ -228,10 +228,10 @@
 
 /* links decoration */
 .article-content a:not(.article-breadcrumb a):not(.article-footer a) {
-    color: #2563eb;
+    color: #194bb8;
     font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
     font-size: 0.95em;
-    background-color: #f1f5f9;
+    background-color: transparent;
     padding: 2px 6px;
     border-radius: 4px;
     text-decoration: none;
@@ -720,5 +720,41 @@
 
 .feedback-status.error {
     color: #b00020;
+}
+
+/* for feedback button Floating Feedback Button*/
+
+.floating-feedback-btn {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    z-index: 9998;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+
+    padding: 0.85rem 1rem;
+
+    background-color: #242020;
+    color: white;
+    border: 1px solid black;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.22);
+
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.95rem;
+    text-decoration: none;
+
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.floating-feedback-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 45px rgba(0, 0, 0, 0.28);
+}
+
+.floating-feedback-btn i {
+    font-size: 1rem;
 }
 

@@ -75,10 +75,12 @@
 
 .navbar-container__profile-link:hover {
     color: #0A66C2;
+    transition: 0.15s ease;
 }
 
 .navbar-container__links .fa-whatsapp:hover {
     color: lightgreen;
+    transition: 0.15s ease;
 }
 
 

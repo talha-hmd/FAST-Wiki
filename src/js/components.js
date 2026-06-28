@@ -382,3 +382,23 @@ function submitFeedbackForm(e) {
     });
 }
 
+// for feedback onn every page
+document.addEventListener("DOMContentLoaded", () => {
+    createFloatingFeedbackButton();
+});
+
+function createFloatingFeedbackButton() {
+    if (document.getElementById("floatingFeedbackBtn")) return;
+
+    const feedbackBtn = document.createElement("a");
+    feedbackBtn.id = "floatingFeedbackBtn";
+    feedbackBtn.className = "floating-feedback-btn";
+    feedbackBtn.href = "/support.html#feedback";
+
+    feedbackBtn.innerHTML = `
+        <i class="fa-solid fa-message"></i>
+        <span>Feedback</span>
+    `;
+
+    document.body.appendChild(feedbackBtn);
+}
