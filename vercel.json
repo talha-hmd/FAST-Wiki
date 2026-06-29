@@ -4,39 +4,39 @@
     "rewrites": [
         {
             "source": "/",
-            "destination": "/homepage.html"
+            "destination": "/homepage"
         },
         {
             "source": "/about",
-            "destination": "/about.html"
+            "destination": "/about"
         },
         {
             "source": "/support",
-            "destination": "/support.html"
+            "destination": "/support"
         },
         {
             "source": "/academics/:subsection",
-            "destination": "/src/sections/academics/:subsection/:subsection.html"
+            "destination": "/src/sections/academics/:subsection/:subsection"
         },
         {
             "source": "/admissions/:subsection",
-            "destination": "/src/sections/admissions/:subsection/:subsection.html"
+            "destination": "/src/sections/admissions/:subsection/:subsection"
         },
         {
             "source": "/campus-life/:subsection",
-            "destination": "/src/sections/campus-life/:subsection/:subsection.html"
+            "destination": "/src/sections/campus-life/:subsection/:subsection"
         },
         {
             "source": "/career/:subsection",
-            "destination": "/src/sections/career/:subsection/:subsection.html"
+            "subsection": "/src/sections/career/:subsection/:subsection"
         },
         {
             "source": "/finances/:subsection",
-            "destination": "/src/sections/finances/:subsection/:subsection.html"
+            "destination": "/src/sections/finances/:subsection/:subsection"
         },
         {
             "source": "/help/:subsection",
-            "destination": "/src/sections/help/:subsection/:subsection.html"
+            "destination": "/src/sections/help/:subsection/:subsection"
         }
     ]
 }
