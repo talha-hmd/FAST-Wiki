@@ -4,4 +4,4 @@ Disallow: /src/css/
 Disallow: /src/js/
 
 # Hosting the map route explicitly for all engine crawlers
-Sitemap: https://fast-wikipedia.vercel.app/sitemap.xml
+Sitemap: https://www.fastnucesguide.com/sitemap.xml
