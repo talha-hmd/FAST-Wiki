@@ -15,22 +15,65 @@
 // This stuff executes automatically on page load
 
 // Google Analytics (GA4) Initialization code
-const gaScript = document.createElement('script');
-gaScript.async = true;
-gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-WHR8RHR86W";
-document.head.appendChild(gaScript);
+// ===============================
+// Analytics Initialization
+// Google Analytics + Microsoft Clarity
+// Only runs on production domain
+// ===============================
 
-window.dataLayer = window.dataLayer || [];
-function gtag() { dataLayer.push(arguments); }
-gtag('js', new Date());
-gtag('config', 'G-WHR8RHR86W');
+const isProductionDomain =
+    window.location.hostname === "fastnucesguide.com" ||
+    window.location.hostname === "www.fastnucesguide.com";
 
-// Microsoft Clarity Initialization code
-(function (c, l, a, r, i, t, y) {
-    c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-    t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-    y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-})(window, document, "clarity", "script", "x8k7maatmi");
+if (isProductionDomain) {
+    // -------------------------------
+    // Google Analytics GA4
+    // -------------------------------
+    const gaScript = document.createElement("script");
+    gaScript.async = true;
+    gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-WHR8RHR86W";
+    document.head.appendChild(gaScript);
+
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    window.gtag = gtag;
+
+    gtag("js", new Date());
+
+    gtag("config", "G-WHR8RHR86W", {
+        page_title: document.title,
+        page_location: window.location.href,
+        page_path: window.location.pathname
+    });
+
+    // -------------------------------
+    // Microsoft Clarity
+    // -------------------------------
+    (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () {
+            (c[a].q = c[a].q || []).push(arguments);
+        };
+
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "x8k7maatmi");
+
+    // Optional Clarity custom tags
+    const pathParts = window.location.pathname.split("/").filter(Boolean);
+
+    if (window.clarity) {
+        window.clarity("set", "section", pathParts[0] || "home");
+        window.clarity("set", "page", pathParts[1] || "home");
+    }
+}
 
 // This is to inject navbar and sidebar upon injection
 document.addEventListener("DOMContentLoaded", () => {
