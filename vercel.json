@@ -28,7 +28,7 @@
         },
         {
             "source": "/career/:subsection",
-            "subsection": "/src/sections/career/:subsection/:subsection"
+            "destination": "/src/sections/career/:subsection/:subsection"
         },
         {
             "source": "/finances/:subsection",
