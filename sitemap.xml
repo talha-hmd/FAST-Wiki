@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <!-- Main Landing Hub -->
+    <!-- Main Landing Hub & Core Info -->
     <url>
         <loc>https://www.fastnucesguide.com/</loc>
         <priority>1.00</priority>
     </url>
-
-    <!-- Core Root Core Pages -->
     <url>
         <loc>https://www.fastnucesguide.com/about</loc>
         <priority>0.80</priority>
@@ -26,8 +24,16 @@
         <priority>0.85</priority>
     </url>
     <url>
+        <loc>https://www.fastnucesguide.com/admissions/nu-test</loc>
+        <priority>0.90</priority>
+    </url>
+    <url>
         <loc>https://www.fastnucesguide.com/admissions/sat-test</loc>
         <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.fastnucesguide.com/admissions/merit</loc>
+        <priority>0.85</priority>
     </url>
     <url>
         <loc>https://www.fastnucesguide.com/admissions/how-to-apply</loc>
@@ -48,6 +54,14 @@
         <priority>0.85</priority>
     </url>
     <url>
+        <loc>https://www.fastnucesguide.com/academics/calendar</loc>
+        <priority>0.75</priority>
+    </url>
+    <url>
+        <loc>https://www.fastnucesguide.com/academics/course-registration</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
         <loc>https://www.fastnucesguide.com/academics/warnings</loc>
         <priority>0.80</priority>
     </url>
@@ -56,8 +70,16 @@
         <priority>0.80</priority>
     </url>
     <url>
+        <loc>https://www.fastnucesguide.com/academics/gpa-economy</loc>
+        <priority>0.85</priority>
+    </url>
+    <url>
         <loc>https://www.fastnucesguide.com/academics/grading</loc>
         <priority>0.75</priority>
+    </url>
+    <url>
+        <loc>https://www.fastnucesguide.com/academics/ragra</loc>
+        <priority>0.85</priority>
     </url>
     <url>
         <loc>https://www.fastnucesguide.com/academics/study-strategy</loc>
@@ -67,6 +89,10 @@
     <!-- Finances Module -->
     <url>
         <loc>https://www.fastnucesguide.com/finances/fee-structure</loc>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://www.fastnucesguide.com/finances/scholarships</loc>
         <priority>0.85</priority>
     </url>
     <url>
@@ -87,6 +113,10 @@
         <loc>https://www.fastnucesguide.com/campus-life/gender-norms</loc>
         <priority>0.70</priority>
     </url>
+    <url>
+        <loc>https://www.fastnucesguide.com/campus-life/teachers</loc>
+        <priority>0.80</priority>
+    </url>
 
     <!-- Career & Future Module -->
     <url>
@@ -99,6 +129,10 @@
     </url>
     <url>
         <loc>https://www.fastnucesguide.com/career/going-abroad</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.fastnucesguide.com/career/abroad-tactics</loc>
         <priority>0.80</priority>
     </url>
 
