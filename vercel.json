@@ -7,6 +7,14 @@
             "destination": "/homepage.html"
         },
         {
+            "source": "/about",
+            "destination": "/about.html"
+        },
+        {
+            "source": "/support",
+            "destination": "/support.html"
+        },
+        {
             "source": "/academics/:subsection",
             "destination": "/src/sections/academics/:subsection/:subsection.html"
         },
