@@ -129,6 +129,11 @@ document.addEventListener("DOMContentLoaded", () => {
         
                 sidebarLinks.forEach(link => {
                     link.addEventListener('click', () => {
+                        // categorize sidebar clicks for clarity analytics
+                        if (window.clarity) {
+                            const linkName = link.textContent.trim().toLowerCase();
+                            window.clarity("set", "sidebar_click", linkName);
+                        }
                         // Force the sidebar to slide closed by adding the closed class
                         sidebarContainer.classList.add('sidebar-closed');
                         

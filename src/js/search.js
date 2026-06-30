@@ -134,13 +134,20 @@ function initDynamicSearch() {
                             event.preventDefault();
                             event.stopPropagation(); // Stop parent from interfering with link clicking
 
+                            // track the search term for clarity analytics
+                            if (window.clarity && query) {
+                                window.clarity("set", "search_term", query);
+                            }
+                            
                             // close modal after link has been clicked
                             overlay.style.display = "none";
                             modalInput.value = "";
                             resultsContainer.innerHTML = "";
+                            
 
                             // Force the browser to completely load the new page address + hash tag
                             window.location.assign(page.url + spanLink.dataset.anchor);
+
                         });
 
                         // p tag goes in a tag
