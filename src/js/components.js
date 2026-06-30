@@ -31,7 +31,8 @@ if (isProductionDomain) {
     // -------------------------------
     const gaScript = document.createElement("script");
     gaScript.async = true;
-    gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-WHR8RHR86W";
+    // Measurement ID inside the script URL source
+    gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-RBM2D3SF97";
     document.head.appendChild(gaScript);
 
     window.dataLayer = window.dataLayer || [];
@@ -44,7 +45,8 @@ if (isProductionDomain) {
 
     gtag("js", new Date());
 
-    gtag("config", "G-WHR8RHR86W", {
+    // Measurement ID inside the explicit configuration call
+    gtag("config", "G-RBM2D3SF97", {
         page_title: document.title,
         page_location: window.location.href,
         page_path: window.location.pathname
@@ -75,7 +77,6 @@ if (isProductionDomain) {
     }
 }
 
-// This is to inject navbar and sidebar upon injection
 // This is to inject navbar and sidebar upon injection
 document.addEventListener("DOMContentLoaded", () => {
     const navbarContainer = document.getElementById('navbar-container');
