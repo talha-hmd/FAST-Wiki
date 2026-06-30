@@ -76,6 +76,7 @@ if (isProductionDomain) {
 }
 
 // This is to inject navbar and sidebar upon injection
+// This is to inject navbar and sidebar upon injection
 document.addEventListener("DOMContentLoaded", () => {
     const navbarContainer = document.getElementById('navbar-container');
     const sidebarContainer = document.getElementById('sidebar-container');
@@ -91,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 navbarContainer.innerHTML = navbarHtml;
             }
 
-            // Now that the navbar is 100% rendered on the DOM, fetch the sidebar to avoid async issues
+            // fetch the sidebar to avoid async issues since navbar is 100% loaded
             return fetch('/components/sidebar.html');
         })
         .then(response => {
@@ -127,10 +128,10 @@ document.addEventListener("DOMContentLoaded", () => {
         
                 sidebarLinks.forEach(link => {
                     link.addEventListener('click', () => {
-                        // 1. Force the sidebar to slide closed by adding the closed class
+                        // Force the sidebar to slide closed by adding the closed class
                         sidebarContainer.classList.add('sidebar-closed');
                         
-                        // 2. Reset the navbar menu button icon back to the hamburger bars
+                        // Reset the navbar menu button icon back to the hamburger bars
                         if (sidebarButton) {
                             const icon = sidebarButton.querySelector('.fa-solid');
                             if (icon) {
@@ -146,46 +147,48 @@ document.addEventListener("DOMContentLoaded", () => {
             if (typeof initDynamicSearch === "function") {
                 initDynamicSearch();
             }
+
+            // Navbar and Sidebar are guaranteed to be in the DOM now. Fetch LinkedIn Card.
+            return fetch('/components/linkedinCard.html');
+        })
+        .then(response => {
+            if (response && response.ok) {
+                return response.text();
+            }
+        })
+        .then(linkedinHtml => {
+            const linkedinCardContainer = document.getElementById('linkedin-card-container');
+            if (linkedinCardContainer && linkedinHtml) {
+                linkedinCardContainer.innerHTML = linkedinHtml;
+            }
+
+            const linkedinButton = document.querySelector('.navbar-container__profile-link');
+            const linkedinPopup = document.querySelector('.popup-overlay'); 
+            const popupClose = document.querySelector('.popup-box__close');
+
+            if (linkedinButton && linkedinPopup) {
+                linkedinButton.addEventListener('click', (e) => {
+                    e.preventDefault(); // prevents the link from refreshing the page
+                    linkedinPopup.classList.toggle('show-popup');
+                });
+
+                // Close the popup if they click outside the cards
+                linkedinPopup.addEventListener('click', (e) => {
+                    if (e.target === linkedinPopup) {
+                        linkedinPopup.classList.remove('show-popup');
+                    }
+                });
+
+                if (popupClose) {
+                    popupClose.addEventListener('click', () => {
+                        linkedinPopup.classList.remove('show-popup');
+                    });
+                }
+            }
         })
         .catch(error => {
             console.error('Error fetching navigation components:', error);
         });
-
-    fetch('/components/linkedinCard.html')
-    .then(response => {
-        if (response.ok) {
-            return response.text(); 
-        }
-    })
-    .then(html => {
-        const linkedinCardContainer = document.getElementById('linkedin-card-container');
-        linkedinCardContainer.innerHTML = html;
-
-        const linkedinButton = document.querySelector('.navbar-container__profile-link');
-        const linkedinPopup = document.querySelector('.popup-overlay'); 
-        const popupClose = document.querySelector('.popup-box__close');
-
-        if (linkedinButton && linkedinPopup) {
-
-            linkedinButton.addEventListener('click', (e) => {
-                e.preventDefault(); // prevents the link from refreshing the page
-                linkedinPopup.classList.toggle('show-popup');
-            });
-
-            // Close the popup if they click outside the cards
-            linkedinPopup.addEventListener('click', (e) => {
-                if (e.target === linkedinPopup) {
-                    linkedinPopup.classList.remove('show-popup');
-                }
-            });
-
-            popupClose.addEventListener('click', () => {
-                linkedinPopup.classList.remove('show-popup');
-            });
-        }
-    }).catch(error => {
-        console.error('Error fetching linkedin card:', error);
-    });
 });
 
 // This is to scroll to the hash target created by search.js
