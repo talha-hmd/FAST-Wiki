@@ -18,9 +18,11 @@
     <link rel="stylesheet" href="/src/css/components.css">
     <link rel="stylesheet" href="/src/css/search.css">
     <link rel="stylesheet" href="/src/css/responsive.css">
+    <link rel="stylesheet" href="/src/css/faq.css">
     
     <script src="/src/js/search.js" defer></script>
     <script src="/src/js/components.js" defer></script>
+    <script src="/src/js/faq.js" defer></script>
 
     <!-- Canonical URL pointing to the clean rewritten path -->
     <link rel="canonical" href="https://www.fastnucesguide.com/help/faq">
@@ -40,71 +42,6 @@
     
     <meta name="twitter:title" content="FAST Admissions & Academics — Frequently Asked Questions | FAST NUCES Guide">
     <meta name="twitter:description" content="Quick, self-contained answers to the most frequently searched questions about FAST NUCES admissions, academic warnings, attendance rules, financial assistance math, and student culture.">
-    
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-                {
-                    "@type": "Question",
-                    "name": "Should I take the NU Test or the NTS NAT for FAST?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Take the NU Test. FAST allocates the majority of its seats to NU Test candidates, so the closing merit on that list is the most forgiving. The NAT stream competes for a much smaller reserved pool and has historically required a near-perfect score; its closing merit also swings violently year to year."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Does FAST still accept SAT Subject Tests (SAT-II)?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "No. The College Board discontinued SAT-II in 2021. FAST admits on the basis of SAT-I on a separate merit list. Some campus sub-sites still display stale references to SAT-II — always verify against the central nu.edu.pk admissions pages."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "What is the minimum attendance required to sit finals at FAST?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "80% for undergraduate programs and 75% for graduate/postgraduate. Falling below renders you ineligible to sit the final exam, and you receive an F/A grade in that course. Up to 20% of absences can be condoned for genuine reasons such as illness."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "What CGPA do I need to avoid an academic warning?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "2.00 for BS/BBA, 2.50 for MS/MBA, and 3.00 for PhD. If your CGPA is still below the minimum after a semester, your Warning Count increases by one; when it reaches three, your admission is closed."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "What GPA do I need to go abroad for a funded master's?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Most reputable foreign master's programs set a hard 3.0 cut-off; a 3.3+ with strong core-course grades is widely reported as 'good enough,' and 3.5+ materially improves scholarship odds. Hitting those numbers at FAST costs materially more effort than at NUST, LUMS, ITU, or a public university."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Is FAST's Financial Assistance a grant or a loan?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "It is Qarz-e-Hasana — an interest-free loan, not a grant. Repayment begins 3 months after graduation or when you secure a job (whichever is earlier), with the full amount due within 4 years. At ~60% FA, the total owed is roughly Rs. 1,000,000, implying ~Rs. 21,000/month for four years after you graduate."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Is BS Computer Science better than BS Cybersecurity if I'm unsure?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Yes, generally. CS opens the entire software/AI/data landscape and still permits a later pivot into cybersecurity; the reverse pivot is far harder. Cybersecurity has a thin entry-level market in Pakistan. Specialise only with a confirmed, researched passion."
-                    }
-                }
-            ]
-        }
-    </script>
 </head>
 
 <body>
@@ -133,120 +70,109 @@
                     </p>
                 </header>
 
-                <section class="article__section">
-                    <h2>Should I take the NU Test or the NTS NAT for FAST?</h2>
-                    <p>
-                        <strong>Take the NU Test.</strong> FAST allocates the vast majority of its open seats to applicants sitting the in-house NU entry test, making its final closing merit the most forgiving and realistic option to clear. 
+<div class="article__faq-box">
+                    <h2 class="faq-box__header">
+                        <div class="faq-box__question">Should I take the NU Test or the NTS NAT for FAST?</div>
+                        <button><i class="fa-solid fa-plus"></i></button>
+                    </h2>
+                    <p class="faq-box__answer answer-hidden">
+                        Take the NU Test. FAST allocates the vast majority of its open seats to applicants sitting 
+                        the in-house NU entry test, making its final closing merit the most forgiving and realistic option to clear. 
+                        The NTS NAT stream competes for a much smaller, highly restricted pool of reserved seats. 
+                        Historically, getting in via NAT has required an almost perfect score, and the merit cutoffs fluctuate violently from year to year. 
+                        Read more detailed breakdowns in Entry Test Streams.
                     </p>
-                    <p>
-                        The NTS NAT stream competes for a much smaller, highly restricted pool of reserved seats. Historically, getting in via NAT has required an almost perfect score, and the merit cutoffs fluctuate violently from year to year.
-                    </p>
-                    <p>
-                        Read more detailed breakdowns in <a href="/admissions/entry-tests">Entry Test Streams</a>.
-                    </p>
-                </section>
+                </div>
 
-                <section class="article__section">
-                    <h2>Does FAST still accept SAT Subject Tests (SAT-II)?</h2>
-                    <p>
-                        <strong>No.</strong> The College Board permanently discontinued SAT Subject Tests (SAT-II) globally in 2021. FAST now evaluates applicants using the regular SAT-I reasoning exam on a completely separate merit list. 
+                <div class="article__faq-box">
+                    <h2 class="faq-box__header">
+                        <div class="faq-box__question">Does FAST still accept SAT Subject Tests (SAT-II)?</div>
+                        <button><i class="fa-solid fa-plus"></i></button>
+                    </h2>
+                    <p class="faq-box__answer answer-hidden">
+                        No. The College Board stopped offering SAT Subject Tests completely back in 2021. FAST now uses the regular SAT-I test and looks at applicants on a totally separate merit list. Even if you see old mentions of SAT-II on some campus web pages, you can ignore them. Always check the main <a href="https://nu.edu.pk/" target="_blank" rel="noopener noreferrer">nu.edu.pk</a> website for the latest rules. You can see the full details in our SAT Test Stream section.
                     </p>
-                    <p>
-                        While a few legacy campus sub-sites still accidentally show stale references to SAT-II, you should always ignore them and verify current parameters on the central <a href="https://nu.edu.pk" target="_blank" rel="noopener noreferrer">nu.edu.pk</a> admissions page.
-                    </p>
-                    <p>
-                        See <a href="/admissions/sat-test">SAT Test Stream</a> for the full SAT admission breakdown.
-                    </p>
-                </section>
+                </div>
 
-                <section class="article__section">
-                    <h2>What is the minimum attendance required to sit finals at FAST?</h2>
-                    <p>
-                        You must maintain a minimum of <strong>80% attendance for undergraduate programs</strong> and <strong>75% attendance for graduate or postgraduate courses</strong>. 
+                <div class="article__faq-box">
+                    <h2 class="faq-box__header">
+                        <div class="faq-box__question">What is the minimum attendance required to sit finals at FAST?</div>
+                        <button><i class="fa-solid fa-plus"></i></button>
+                    </h2>
+                    <p class="faq-box__answer answer-hidden">
+                        You must attend at least 80% of your classes for Bachelor's programs, and 75% for Master's or Ph.D. courses. If your attendance drops below this, the computer system will automatically block you from taking the final exam. This means you will immediately get an "F due to Absence" grade. The university only excuses missed classes for serious, proven emergencies like a bad illness. You can read the full rules at <a href="/academics/academic-rules">rules</a>.
                     </p>
-                    <p>
-                        If you drop below this threshold, the system automatically renders you ineligible to sit the final exam, resulting in an immediate F/A (Fail due to Absence) grade on your transcript. The university only condones up to 20% of absences for genuine, heavily documented emergencies like medical illness.
-                    </p>
-                    <p>
-                        Full rules on the attendance wall, missed-exam boards, and the cheating policy are in <a href="/academics/academic-rules">Attendance, Missed Exams & Academic Integrity</a>.
-                    </p>
-                </section>
+                </div>
 
-                <section class="article__section">
-                    <h2>What CGPA do I need to avoid an academic warning?</h2>
-                    <p>
-                        To stay in good academic standing, you must maintain a minimum cumulative GPA of <strong>2.00 for Bachelor's (BS/BBA) programs</strong>, <strong>2.50 for Master's (MS/MBA) degrees</strong>, and <strong>3.00 for a Ph.D.</strong>
+                <div class="article__faq-box">
+                    <h2 class="faq-box__header">
+                        <div class="faq-box__question">What CGPA do I need to avoid an academic warning?</div>
+                        <button><i class="fa-solid fa-plus"></i></button>
+                    </h2>
+                    <p class="faq-box__answer answer-hidden">
+                        To stay safe and keep your admission active, you need to keep your total GPA at or above 2.00 for Bachelor's degrees, 2.50 for Master's degrees, and 3.00 for a Ph.D. If your GPA drops below these limits at the end of a semester, you will get an official warning. If you get three warnings in a row without raising your grades, you will be expelled from the university. Check out <a href="/academics/warnings">academic warnings</a> to see how to recover if you get a warning.
                     </p>
-                    <p>
-                        If your CGPA drops below these lines at the end of any semester, your official Warning Count goes up by one. If you fail to pull your grades up and hit three consecutive warnings, your university admission will be permanently closed.
-                    </p>
-                    <p>
-                        Read about emergency recovery tactics in <a href="/academics/warnings">Academic Warnings & Probation</a>.
-                    </p>
-                </section>
+                </div>
 
-                <section class="article__section">
-                    <h2>What GPA do I need to go abroad for a funded master's?</h2>
-                    <p>
-                        Most reputable international universities enforce a hard <strong>3.0 GPA cutoff</strong> just to evaluate your application file. To be genuinely competitive, a <strong>3.3+ GPA</strong> loaded with top scores in core computing and math subjects is widely reported as good enough for admissions, while a <strong>3.5+ GPA</strong> materially secures your odds for fully funded scholarships. 
+                <div class="article__faq-box">
+                    <h2 class="faq-box__header">
+                        <div class="faq-box__question">What GPA do I need to go abroad for a funded master's?</div>
+                        <button><i class="fa-solid fa-plus"></i></button>
+                    </h2>
+                    <p class="faq-box__answer answer-hidden">
+                        Most good international universities won't even look at your application if your GPA is below 3.0. To actually stand a good chance of getting accepted, aim for a 3.3 or higher with top grades in math and programming subjects. If you want a fully funded scholarship, you will usually need a 3.5 or higher. Keep in mind that getting these high grades at FAST is much harder and requires a lot more grind than at other universities. Check out <a href="/career/going-abroad">going abroad</a> for all the math behind the grading scale.
                     </p>
-                    <p>
-                        Keep in mind that hitting these target metrics on FAST's brutal grading curve requires far more exhaustion and grind than it would at NUST, LUMS, ITU, or a standard public university.
-                    </p>
-                    <p>
-                        The SGPA/CGPA formulas and the 3.0 foreign-master's cutoff are detailed in <a href="/academics/grading">Grading System & GPA Dynamics</a>.
-                    </p>
-                </section>
+                </div>
 
-                <section class="article__section">
-                    <h2>Is FAST's Financial Assistance a grant or a loan?</h2>
-                    <p>
-                        It is structured strictly as <strong>Qarz-e-Hasana—an interest-free loan, not a free grant</strong>. You are legally required to start paying back the university three months after your official graduation date or as soon as you secure your first job, whichever comes first. 
+                <div class="article__faq-box">
+                    <h2 class="faq-box__header">
+                        <div class="faq-box__question">Is FAST's Financial Assistance a grant or a loan?</div>
+                        <button><i class="fa-solid fa-plus"></i></button>
+                    </h2>
+                    <p class="faq-box__answer answer-hidden">
+                        It is an interest-free loan (called Qarz-e-Hasana), not a free grant. This means you must pay it back. Payments start three months after you graduate or as soon as you get your first job—whichever happens first. You have to pay back the whole amount within 4 years. For example, if the university pays for 60% of your degree, you will owe around Rs. 1,000,000 when you leave, which works out to about Rs. 21,000 every month for 48 months. You can read the details in <a href="/finances/financial-aid">Financial Aid</a>.
                     </p>
-                    <p>
-                        The entire balance must be cleared within 4 years. For instance, if you receive a standard 60% Financial Assistance package, you will graduate owing roughly Rs. 1,000,000, which translates into a fixed bill of roughly <strong>Rs. 21,000 per month for forty-eight months</strong> right after you step off campus.
-                    </p>
-                    <p>
-                        See <a href="/finances/financial-aid">Financial Aid & Qarz-e-Hasana</a> for the full repayment breakdown.
-                    </p>
-                </section>
+                </div>
 
-                <section class="article__section">
-                    <h2>Can I afford FAST if my family income is around Rs. 80,000/month?</h2>
-                    <p>
-                        <strong>It is exceptionally difficult</strong> and entirely dependent on stacking multiple aid pipelines perfectly. If you try it, you must apply to the FAST loan program, the Honhaar Scholarship, PEEF, OSAF, and the Ihsan Trust simultaneously while mapping out your post-grad repayment model. 
+                <div class="article__faq-box">
+                    <h2 class="faq-box__header">
+                        <div class="faq-box__question">Can I afford FAST if my family income is around Rs. 80,000/month?</div>
+                        <button><i class="fa-solid fa-plus"></i></button>
+                    </h2>
+                    <p class="faq-box__answer answer-hidden">
+                        It is very difficult and only works if you successfully apply for multiple scholarships and loans at the same time, like the FAST loan, Honhaar Scholarship, PEEF, OSAF, and Ihsan Trust. You should definitely apply to cheaper public universities (like UET, PUCIT, ITU, or NED) as a backup plan. If going to FAST means your family has to take out heavy bank loans with high interest, it is much smarter to choose a cheaper university and work hard on your coding skills on your own.
                     </p>
-                    <p>
-                        You should absolutely keep a solid backup option open—such as UET, PUCIT, ITU, or NED—where you can easily absorb the semester fees without heavy debt. If attending FAST requires your family to take out commercial bank loans on top of internal university aid, choosing a cheaper public college and building killer coding skills on your own is a far smarter path for a local tech career.
-                    </p>
-                </section>
+                </div>
 
-                <section class="article__section">
-                    <h2>Is the "gender rules" viral post about FAST real?</h2>
-                    <p>
-                        <strong>No—it is pure online satire.</strong> The viral memes listing extreme fine systems for sitting with classmates or talking across genders are jokes. FAST operates like any normal, co-educational university in Pakistan, adhering to standard cultural boundaries and customary social courtesies. While the student stress and academic anxiety the meme mocks are very real, the crazy rules themselves do not exist.
+                <div class="article__faq-box">
+                    <h2 class="faq-box__header">
+                        <div class="faq-box__question">Is the "gender rules" about FAST real?</div>
+                        <button><i class="fa-solid fa-plus"></i></button>
+                    </h2>
+                    <p class="faq-box__answer answer-hidden">
+                        No, it is just an internet joke. The online posts claiming students get fined huge amounts for sitting or talking with the opposite gender are completely fake. FAST is a normal university where boys and girls study together respectfully, following standard cultural values. While students do face a lot of real academic stress, these crazy rules do not exist.
                     </p>
-                </section>
+                </div>
 
-                <section class="article__section">
-                    <h2>Is BS Computer Science better than BS Cybersecurity if I'm unsure?</h2>
-                    <p>
-                        <strong>Yes, absolutely.</strong> A standard BS CS degree covers the entire landscape of engineering, AI, data architecture, and software development, allowing you to easily pivot into cybersecurity later via electives or industry certifications. 
+                <div class="article__faq-box">
+                    <h2 class="faq-box__header">
+                        <div class="faq-box__question">Is BS Computer Science better than BS Cybersecurity if I'm unsure?</div>
+                        <button><i class="fa-solid fa-plus"></i></button>
+                    </h2>
+                    <p class="faq-box__answer answer-hidden">
+                        Yes, definitely. A standard Computer Science degree covers everything from software development to AI, making it very easy to switch to cybersecurity later by picking the right elective subjects or getting professional certificates. If you choose cybersecurity right from the start, you are locked into a narrow set of classes, and it is much harder to switch out. Plus, there aren't many entry-level jobs for fresh cybersecurity graduates in Pakistan right now. Only pick it early if you are 100% sure you love it.
                     </p>
-                    <p>
-                        Trying to pivot the other way around is significantly harder because a cybersecurity degree locks you into a narrow curriculum. Furthermore, the junior entry-level security market inside Pakistan is quite thin. Only specialize early if you possess a deeply researched, verified passion for the domain.
-                    </p>
-                </section>
+                </div>
 
-                <section class="article__section">
-                    <h2>How long do I have to complete my BS at FAST?</h2>
-                    <p>
-                        Following Higher Education Commission (HEC) regulations, you have a <strong>maximum of six years</strong> to finish your 4-year Bachelor's degree. 
+                <div class="article__faq-box">
+                    <h2 class="faq-box__header">
+                        <div class="faq-box__question">How long do I have to complete my BS at FAST?</div>
+                        <button><i class="fa-solid fa-plus"></i></button>
+                    </h2>
+                    <p class="faq-box__answer answer-hidden">
+                        According to higher education rules, you have a maximum of 6 years to finish your 4-year Bachelor's degree. While you can ask for a 1-year emergency extension, the university only gives this out for major, unavoidable life events, such as a serious medical condition or a death in your close family.
                     </p>
-                    <p>
-                        While you can technically request a one-year emergency extension, the university's Statutory Bodies only grant this for severe, completely unavoidable life events—such as documented medical conditions, a death in your immediate family, maternity, or the observation of Iddat.
-                    </p>
-                </section>
+                </div>
 
                 <footer class="article-footer">
                     <a href="/help/useful-links" class="article-footer__next">
